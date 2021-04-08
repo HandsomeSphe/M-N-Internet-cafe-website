@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=0.1" />
+  <meta http-equiv="X-UA-Compactible" content="ie=edge" />
+  <title>M&N Internet Cafe</title>
+  <link type="text/css" rel="stylesheet" href="./sass/style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+</html>
+<body>
+  <!--This is the navigation bar-->
+  <div class="navbar">
+    <div class="navbar__logo">Logo</div>
+    <ul class="navbar__list">
+      <li class="navbar__list--item active"><a href="Index.html">Home</a></li>
+      <li class="navbar__list--item">
+        <a href="#">About</a>
+      </li>
+      <li class="navbar__list--item"><a href="#">Services</a></li>
+      <li class="navbar__list--item"><a href="#">Make CV</a></li>
+      <li class="navbar__list--item"><a href="#">Print out</a></li>
+      <li class="navbar__list--item"><a href="#">Contacts</a></li>
+    </ul>
+  </div>
+
+  <!--This is the home page-->
+  <section class="homepage">
+    <div class="homepage__text">
+      <div class="homepage__text--main"><span>M&N</span> Internet Cafe</div>
+      <div class="homepage__text--sub">
+        We keep you connected to the rest of the world
+      </div>
+      <div class="homepage__text--buttons">
+        <div class="createCV__button">Create CV</div>
+        <div class="printDocument__button">Print document</div>
+      </div>
+    </div>
+    <div class="homepage__image">
+      <img
+        class="img"
+        src="./Images/193015495685_1-zoom-removebg-preview.png"
+      />
+      <img class="svg" src="Images/Vector 1.svg" />
+    </div>
+  </section>
+  <!--The about us section-->
+  <section class="about">
+    <div class="heading">About us</div>
+    <div class="about__heading">
+      What <span>M&N Internet Cafe</span> is all about?
+    </div>
+    <div class="about__description">
+      <div class="about__description--main">
+        We are an internet cafe based in Mgababa area, we provide a whole broad
+        of electronic services from photocopying, printing, Internet access,
+        making CV, CAO application and a lot more.
+      </div>
+      <div class="about__description--second">
+        We have about 10 Desktops available at our main place but we planning to
+        provide a bit more.
+      </div>
+    </div>
+  </section>
+  <!--This is the  services section-->
+  <section class="services">
+    <div class="services__heading">Our Services</div>
+    <div class="services__cards">
+      <div class="card">
+        <div class="card__icon">
+          <img
+            class="icon"
+            src="./Icons/iconfinder_printer__print__outline__printsetting__papper__photocopy__machine_2318004.svg"
+          />
+        </div>
+        <div class="card__title" id="print">Printing</div>
+        <div class="card__description">
+          We print almost everything, black and white documents, coloureful
+          documents.
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__icon">
+          <img class="icon" src="./Icons/iconfinder_copy_370087.svg" />
+        </div>
+        <div class="card__title" id="copy">Photocoping</div>
+        <div class="card__description">
+          We photocopy almost every document, pictures.
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__icon">
+          <img
+            class="icon"
+            id="globe"
+            src="./Icons/iconfinder_globe_172473.svg"
+          />
+        </div>
+        <div class="card__title">Internet access</div>
+        <div class="card__description">
+          We have desktops with WiFi connection. You can visite any website or
+          go to facebook, Instagram and download
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--This is the  services section-->
+  <section class="contacts">
+    <div class="contacts__heading">Contact us</div>
+    <div class="contact__wrapper">
+      <div class="contact__input">
+        <input type="text" class="name" placeholder="Your name" />
+        <input type="email" class="email" placeholder="Your email" />
+        <textarea
+          name="message"
+          id="message"
+          cols="30"
+          rows="20"
+          placeholder="Message"
+        ></textarea>
+        <div class="contact__button">
+          <div class="send">send</div>
+        </div>
+      </div>
+      <div class="contact__info">
+        <div class="contact__info--number">
+          <img
+            id="number"
+            src="./Icons/iconfinder_icon-ios7-telephone-outline_211829.svg"
+          />
+          <div>cell number: (031)3456754</div>
+        </div>
+        <div class="contact__info--email">
+          <img
+            id="email"
+            src="./Icons/iconfinder_Tilda_Icons_1ed_mail_3586360.svg"
+          />
+          <div>Our email address: M&N@gmail.com</div>
+        </div>
+        <div class="contact__info--socialHandles">
+          <div class="twitter">
+            <img id="twtt" src="./Icons/iconfinder_twitter_circle_294709.svg" />
+            <div>Twitter</div>
+          </div>
+          <div class="facebook">
+            <img id="fb" src="./Icons/iconfinder_facebook_834722.svg" />
+            <div>Facebook</div>
+          </div>
+          <div class="Instagram">
+            <img id="ins" src="./Icons/iconfinder_Instagram_1298747.svg" />
+            <div>Instagram</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--This is the footer--->
+  <section class="footer">&#169;copyright, All rights reserved.</section>
+  <!--This is the print page-->
+  <section class="printOut">
+    <div class="printOut__heading">Print a document</div>
+    <div class="printOut__printerDetails">
+      <input
+        type="name"
+        class="printOut__printerDetails--name"
+        placeholder="name"
+      />
+      <input
+        type="name"
+        class="printOut__printerDetails--surname"
+        placeholder="surname"
+      />
+    </div>
+    <div class="printOut__printerDetails--document">
+      <div class="text">Drag & drop/Upload a document</div>
+    </div>
+    <input type="number" />
+    <div class="printOut__button">Print</div>
+  </section>
+  <!--This is the link to JavaScript page-->
+  <script src="script.js"></script>
+</body>

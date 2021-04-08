@@ -1,0 +1,64 @@
+.services {
+  width: 100%;
+  height: 120vh;
+  background-image: url("/Images/bg.jpg");
+  position: relative !important;
+  padding-top: 7rem;
+
+  &__heading {
+    margin: 0 30% 0 50%;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.45);
+    font-weight: 500;
+  }
+  &__cards {
+    display: flex;
+    margin: 12rem 3rem 0 5rem;
+  }
+}
+.card {
+  width: 22%;
+  height: 50vh;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 26px rgba(0, 0, 0, 0.11);
+  border: 1px solid rgba(0, 0, 0, 0.09);
+  padding: 1rem;
+  padding-top: 2.6rem;
+  margin-left: 2.5rem;
+  &__title {
+    margin-left: 3.5rem;
+    color: rgba(0, 0, 0, 1);
+    font-weight: 600;
+    margin-bottom: 1.4rem;
+  }
+  &__description {
+    color: #666;
+  }
+}
+.card:not(:last-child) {
+  margin-right: 7rem;
+}
+.card__icon {
+  background-color: rgba(120, 7, 7, 0.2);
+  width: 6.5rem;
+  height: 14vh;
+  margin: 0 auto;
+  border-radius: 50px;
+  margin-bottom: 1.2rem;
+}
+#globe {
+  margin-left: 1.8rem;
+}
+.icon {
+  width: 3rem;
+  height: 3rem;
+  fill: #666;
+  margin: 1.5rem 1.4rem 0 1.7rem;
+}
+#print {
+  margin-left: 4.6rem;
+}
+#copy {
+  margin-left: 3.5rem;
+}

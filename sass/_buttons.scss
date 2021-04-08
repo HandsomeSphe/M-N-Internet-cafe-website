@@ -1,0 +1,59 @@
+.createCV__button,
+.printDocument__button {
+  width: 47%;
+  height: 4.7vh;
+  border-radius: 50px;
+  background-color: #780707;
+  color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 0.2rem;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.createCV__button {
+  animation: appear 3s ease-in;
+}
+.printDocument__button {
+  background-color: rgba(120, 7, 7, 0.7);
+  margin-left: 1.5rem;
+  animation: appear 3.3s ease-in;
+}
+.createCV__button:hover,
+.printDocument__button:hover {
+  height: 5.3vh;
+  transform: translateY(-0.4rem);
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: scale(0.87);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+// contact page buttons
+input,
+.contact__button {
+  width: 80%;
+  height: 6vh;
+  border: 0.5px solid rgba(0, 0, 0, 0.15);
+  padding: 0.4rem;
+  //  box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.2), 4px 0px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+  font-weight: 500;
+  font-family: poppins, sans-serif;
+}
+.contact__button {
+  margin-top: 1rem;
+  background-color: #780707;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+}

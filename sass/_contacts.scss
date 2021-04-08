@@ -1,0 +1,126 @@
+.contacts {
+  width: 100%;
+  height: 100vh;
+  background: url("/Images/bg.jpg");
+  padding-top: 1rem;
+
+  &__heading {
+    margin: 0 30% 0 50%;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.45);
+    font-weight: 500;
+  }
+}
+.contact {
+  &__wrapper {
+    display: flex;
+    margin-top: 5rem;
+    padding: 0 4rem;
+  }
+  &__input {
+    width: 100%;
+    height: 80vh;
+    flex: 0 0 50%;
+    padding: 1.3rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__info {
+    flex: 1;
+    padding: 1.3rem;
+    &--number,
+    &--email {
+      display: flex;
+      align-items: center;
+      color: rgba(0, 0, 0, 0.5);
+    }
+  }
+  &__info--socialHandles {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    height: 3rem;
+    margin-top: 1rem;
+  }
+}
+.twitter,
+.Instagram,
+.facebook {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 2rem;
+  color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.twitter:hover,
+.Instagram:hover,
+.facebook:hover {
+  color: #000;
+  font-weight: 500;
+}
+
+.facebook,
+.Instagram,
+.twitter {
+  display: flex;
+  align-items: center;
+}
+
+#fb {
+  width: 2rem;
+  height: 2rem;
+}
+#number,
+#email {
+  width: 1.4rem;
+  height: 1.4rem;
+  margin-right: 1rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+input:focus,
+input:active {
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.35);
+}
+input {
+  margin-bottom: 0.2rem;
+}
+#ins,
+#twtt,
+#fb {
+  margin-right: 0.2rem;
+}
+#sendIcon {
+  width: 1.4rem;
+  height: 1.4rem;
+  margin-right: 0.2rem;
+  color: white;
+  fill: white;
+}
+#message {
+  width: 80%;
+  height: 30vh;
+  border: 0.5px solid rgba(0, 0, 0, 0.15);
+  padding: 1rem 0.5rem;
+  font-weight: 500;
+  font-family: poppins, sans-serif;
+  color: #666;
+  // margin-top: 0.2rem;
+  // box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.2), 4px 0px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+}
+#message:focus,
+#message:active {
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.35);
+}
+.footer {
+  display: block;
+  width: 100%;
+  height: 4rem;
+  background: #666;
+  padding: 1rem;
+  color: white;
+}
