@@ -731,5 +731,24 @@ span {
   height: 1rem;
   border: 1px solid #666;
   border-radius: 50px;
+  color: #666;
+}
+
+.personal::after {
+  content: "";
+  display: block;
+  width: 19rem;
+  height: 0.1rem;
+  background-color: #666;
+  margin: 0.3rem 0 0 0.9rem;
+}
+
+.education::after {
+  content: "";
+  display: block;
+  width: 18rem;
+  height: 0.1rem;
+  background-color: #666;
+  margin: 0.3rem 0 0 0.9rem;
 }
 /*# sourceMappingURL=style.css.map */
