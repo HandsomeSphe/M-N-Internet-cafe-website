@@ -1,0 +1,80 @@
+.printOut {
+  width: 100%;
+  height: 100vh;
+  padding: 2rem 0;
+
+  &__printerDetails {
+    display: flex;
+    margin-left: 22 rem;
+
+    &--document {
+      width: 49%;
+      height: 50vh;
+      margin: 1rem 0;
+      margin-left: 22rem;
+
+      border: 1px dashed rgba(0, 0, 0, 0.4);
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+.pages {
+  display: flex;
+  align-items: center;
+  margin-left: 22rem;
+  margin-bottom: 0.3rem;
+}
+.page {
+  margin-right: 0.2rem;
+  font-weight: 500;
+
+  &__numbers {
+    width: 5%;
+    height: 2rem;
+  }
+}
+.printOut__button {
+  margin-left: 22rem;
+  width: 49%;
+  border-radius: 4px;
+  height: 2.5rem;
+  background-color: #780707;
+  color: white;
+  margin-bottom: 3rem;
+  padding: 0.4rem;
+  text-align: center;
+  cursor: pointer;
+}
+.dropIcon {
+  width: 8rem;
+  height: 8rem;
+  margin: 2rem 0 7rem 0;
+}
+.printer__heading {
+  margin: 0 30% 2rem 45%;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.45);
+  font-weight: 500;
+  padding: 3rem;
+}
+.printer__details {
+  display: flex;
+  &--name,
+  &--surname {
+    width: 23%;
+    height: 2.2rem;
+  }
+  &--name {
+    margin: 0 2rem 0 22.3rem;
+  }
+}
+.upload {
+  color: #780707;
+  border: none;
+  border-bottom: 1px solid #780707;
+  cursor: pointer;
+}

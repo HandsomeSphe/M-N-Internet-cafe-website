@@ -160,26 +160,30 @@
   <!--This is the footer--->
   <section class="footer">&#169;copyright, All rights reserved.</section>
   <!--This is the print page-->
-  <section class="printOut">
-    <div class="printOut__heading">Print a document</div>
-    <div class="printOut__printerDetails">
+  <section class="printer">
+    <div class="printer__heading">Print a document</div>
+    <div class="printer__details">
+      <input type="name" class="printer__details--name" placeholder="name" />
       <input
         type="name"
-        class="printOut__printerDetails--name"
-        placeholder="name"
-      />
-      <input
-        type="name"
-        class="printOut__printerDetails--surname"
+        class="printer__details--surname"
         placeholder="surname"
       />
     </div>
     <div class="printOut__printerDetails--document">
-      <div class="text">Drag & drop/Upload a document</div>
+      <img class="dropIcon" src="Icons/iconfinder_copy_370087.svg" />
+      <div class="text">
+        Drag & drop/<span class="upload">Upload</span> a document
+      </div>
     </div>
-    <input type="number" />
+    <div class="pages">
+      <div class="page">Pages</div>
+      <input class="page__numbers" type="number" placeholder="1" />
+    </div>
+
     <div class="printOut__button">Print</div>
   </section>
+
   <!--This is the link to JavaScript page-->
   <script src="script.js"></script>
 </body>
