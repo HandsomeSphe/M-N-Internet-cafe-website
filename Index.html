@@ -186,69 +186,78 @@
 
   <!--This is the create a CV page-->
   <section class="createCV">
-    <div class="createPersonal__left">
-      <input type="name" class="personalName" placeholder="your names" />
-      <div class="cellphone__text">Cellphone number</div>
-      <div class="cellphone">
-        <div class="box1"></div>
-        <div class="box2"></div>
-        <div class="box3"></div>
-        <div class="box4"></div>
-        <div class="box5"></div>
-        <div class="box6"></div>
-        <div class="box7"></div>
-        <div class="box8"></div>
-        <div class="box9"></div>
-        <div class="box10"></div>
+    <div class="Personal">
+      <div class="createPersonal__left">
+        <input type="name" class="personalName" placeholder="your names" />
+        <div class="cellphone__text">Cellphone number</div>
+        <div class="cellphone">
+          <input type="text" class="box1" maxlength="1" />
+          <input type="text" class="box2" maxlength="1" />
+          <input type="text" class="box3" maxlength="1" />
+          <input type="text" class="box4" maxlength="1" />
+          <input type="text" class="box5" maxlength="1" />
+          <input type="text" class="box6" maxlength="1" />
+          <input type="text" class="box7" maxlength="1" />
+          <input type="text" class="box8" maxlength="1" />
+          <input type="text" class="box9" maxlength="1" />
+          <input type="text" class="box10" maxlength="1" />
+        </div>
+        <div class="id__text">ID number</div>
+        <div class="ID">
+          <input type="text" class="box1" maxlength="1" />
+          <input type="text" class="box2" maxlength="1" />
+          <input type="text" class="box3" maxlength="1" />
+          <input type="text" class="box4" maxlength="1" />
+          <input type="text" class="box5" maxlength="1" />
+          <input type="text" class="box6" maxlength="1" />
+          <input type="text" class="box7" maxlength="1" />
+          <input type="text" class="box8" maxlength="1" />
+          <input type="text" class="box9" maxlength="1" />
+          <input type="text" class="box10" maxlength="1" />
+          <input type="text" class="box11" maxlength="1" />
+          <input type="text" class="box12" maxlength="1" />
+          <input type="text" class="box13" maxlength="1" />
+        </div>
+        <div class="address__text">Physical address</div>
+        <textarea
+          class="postaddress"
+          name="address"
+          id="p.address"
+          cols="30"
+          rows="10"
+        ></textarea>
+        <div class="cancel">cancel</div>
       </div>
-      <div class="id__text">ID number</div>
-      <div class="ID">
-        <div class="box1"></div>
-        <div class="box2"></div>
-        <div class="box3"></div>
-        <div class="box4"></div>
-        <div class="box5"></div>
-        <div class="box6"></div>
-        <div class="box7"></div>
-        <div class="box8"></div>
-        <div class="box9"></div>
-        <div class="box10"></div>
-        <div class="box11"></div>
-        <div class="box12"></div>
+      <div class="createPersonal__right">
+        <input
+          type="text"
+          class="createPersonal__surname"
+          placeholder="surname"
+        />
+        <div class="dateOfBirth">Date of birth</div>
+        <div class="dateOfBirth__numbers">
+          <input class="date" type="date" class="box1" placeholder="D" />
+          <!-- <input type="date" class="box2" maxlength="1" placeholder="D" />
+          <input type="date" class="box3" maxlength="1" placeholder="M" />
+          <input type="date" class="box4" maxlength="1" placeholder="M" />
+          <input type="date" class="box5" maxlength="1" placeholder="Y" />
+          <input type="date" class="box6" maxlength="1" placeholder="Y" />
+          <input type="date" class="box7" maxlength="1" placeholder="Y" />
+          <input type="date" class="box8" maxlength="1" placeholder="Y" /> -->
+        </div>
+        <input type="email" class="emailAddress" placeholder="email address" />
+        <div class="languages__heading">Languages you can speak</div>
+        <input type="text" class="languages" />
+        <div class="marriage">
+          <div class="marriage__text">Martial status</div>
+          <label>single</label>
+          <input class="single" id="single" type="checkbox" />
+          <label>married</label>
+          <input class="married" id="married" type="checkbox" />
+        </div>
+        <input class="postaAddress" type="text" placeholder="postal address" />
+        <div class="nextBtn">Next</div>
       </div>
-      <div class="address__text">Physical address</div>
-      <textarea name="address" id="p.address" cols="30" rows="10"></textarea>
-      <div class="cancel">cancel</div>
-    </div>
-    <div class="createPersonal__right">
-      <input
-        type="text"
-        class="createPersonal__surname"
-        placeholder="surname"
-      />
-      <div class="dateOfBirth">Date of birth</div>
-      <div class="dateOfBirth__numbers">
-        <div class="box1"></div>
-        <div class="box2"></div>
-        <div class="box3"></div>
-        <div class="box4"></div>
-        <div class="box5"></div>
-        <div class="box6"></div>
-        <div class="box7"></div>
-        <div class="box8"></div>
-      </div>
-      <input type="email" class="emailAddress" />
-      <div class="languages__heading">Languages you can speak</div>
-      <input type="text" class="languages" />
-      <div class="marriage">
-        <div class="marriage__text">Martial status</div>
-        <label>single</label>
-        <input id="single" type="checkbox" />
-        <label>married</label>
-        <input id="married" type="checkbox" />
-      </div>
-      <input class="postaAddress" type="text" placeholder="postal address" />
-      <div class="nextBtn">Next</div>
     </div>
   </section>
   <!--This is the link to JavaScript page-->
