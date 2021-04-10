@@ -212,6 +212,8 @@ input,
 
 .card__description {
   color: #666;
+  font-size: 0.9rem;
+  text-align: center;
 }
 
 .card:not(:last-child) {
@@ -671,7 +673,8 @@ span {
   cursor: pointer;
 }
 
-.createCV {
+.createCV,
+.progress {
   width: 100%;
   height: 100vh;
   position: relative;
@@ -688,7 +691,8 @@ span {
           align-items: center;
 }
 
-.createCV__btn {
+.createCV__btn,
+.progress__btn {
   width: 20%;
   height: 3rem;
   background-color: #780707;
@@ -714,7 +718,7 @@ span {
           justify-content: space-between;
   width: 60%;
   height: 3rem;
-  margin: 0 0 15rem 0;
+  margin: 0 0 5rem 0;
 }
 
 .progressBar__education, .progressBar__work, .progressBar__personal {
@@ -738,12 +742,13 @@ span {
   border: 1px solid #666;
   border-radius: 50px;
   color: #666;
+  background-color: white;
 }
 
 .personal::after {
   content: "";
   display: block;
-  width: 19rem;
+  width: 17.8rem;
   height: 0.1rem;
   background-color: #666;
   margin: 0.3rem 0 0 0.9rem;
@@ -752,7 +757,7 @@ span {
 .education::after {
   content: "";
   display: block;
-  width: 17.8rem;
+  width: 18rem;
   height: 0.1rem;
   background-color: #666;
   margin: 0.3rem 0 0 0.9rem;
@@ -888,6 +893,14 @@ span {
 
 .postaAddress {
   width: 60%;
+  font-family: poppins, sans-serif;
+}
+
+.postaddress2,
+.postaddress3 {
+  width: 60%;
+  font-family: poppins, sans-serif;
+  margin-bottom: 1rem;
 }
 
 .nextBtn {
@@ -897,8 +910,17 @@ span {
   background-color: #780707;
   text-align: center;
   color: white;
-  padding: 0.2rem;
+  padding: 0.26rem;
   border-radius: 5px;
   cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.qualification {
+  width: 60%;
+}
+
+.second {
+  margin-top: 8rem;
 }
 /*# sourceMappingURL=style.css.map */
