@@ -1,25 +1,3 @@
-.createCV,
-.progress,
-.schools,
-.workExperience {
-  width: 100%;
-  height: 100vh;
-  position: relative;
-  display: flex;
-  padding: 5rem 2rem;
-  flex-direction: column;
-  align-items: center;
-  &__btn {
-    width: 20%;
-    height: 3rem;
-    background-color: #780707;
-    color: white;
-    border-radius: 50px;
-    text-align: center;
-    padding: 0.6rem 0;
-    cursor: pointer;
-  }
-}
 .emailAddress {
   margin-top: 1rem;
   width: 60%;
@@ -153,13 +131,7 @@
   outline: none;
   border: 0.8px solid rgba(0, 0, 0, 0.4);
 }
-.cancel {
-  color: #666;
-  margin-top: 3rem;
-  border-bottom: 2px solid #666;
-  width: 3.5rem;
-  cursor: pointer;
-}
+
 .marriage__text,
 .driving__text,
 .certificate__text {
@@ -203,22 +175,6 @@
   border: 0.8px solid rgba(0, 0, 0, 0.15);
 }
 
-.nextBtn,
-.doneBtn {
-  margin: 3rem 0 0 16rem;
-  width: 4rem;
-  height: 2rem;
-  background-color: #780707;
-  text-align: center;
-  color: white;
-  padding: 0.26rem;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 0.9rem;
-}
-.doneBtn {
-  margin-top: 19rem;
-}
 .qualification {
   width: 60%;
   border: 0.8px solid rgba(0, 0, 0, 0.15);

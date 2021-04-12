@@ -104,6 +104,66 @@ input,
   cursor: pointer;
 }
 
+.createCV,
+.progress,
+.schools,
+.workExperience {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5rem 2rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.createCV__btn,
+.progress__btn,
+.schools__btn,
+.workExperience__btn {
+  width: 20%;
+  height: 3rem;
+  background-color: #780707;
+  color: white;
+  border-radius: 50px;
+  text-align: center;
+  padding: 0.6rem 0;
+  cursor: pointer;
+}
+
+.cancel {
+  color: #666;
+  margin-top: 3rem;
+  border-bottom: 2px solid #666;
+  width: 3.5rem;
+  cursor: pointer;
+}
+
+.nextBtn,
+.doneBtn {
+  margin: 3rem 0 0 16rem;
+  width: 4rem;
+  height: 2rem;
+  background-color: #780707;
+  text-align: center;
+  color: white;
+  padding: 0.26rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.doneBtn {
+  margin-top: 19rem;
+}
+
 .navbar {
   width: 100%;
   height: 8vh;
@@ -674,40 +734,6 @@ span {
   cursor: pointer;
 }
 
-.createCV,
-.progress,
-.schools,
-.workExperience {
-  width: 100%;
-  height: 100vh;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 5rem 2rem;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.createCV__btn,
-.progress__btn,
-.schools__btn,
-.workExperience__btn {
-  width: 20%;
-  height: 3rem;
-  background-color: #780707;
-  color: white;
-  border-radius: 50px;
-  text-align: center;
-  padding: 0.6rem 0;
-  cursor: pointer;
-}
-
 .emailAddress {
   margin-top: 1rem;
   width: 60%;
@@ -883,14 +909,6 @@ span {
   border: 0.8px solid rgba(0, 0, 0, 0.4);
 }
 
-.cancel {
-  color: #666;
-  margin-top: 3rem;
-  border-bottom: 2px solid #666;
-  width: 3.5rem;
-  cursor: pointer;
-}
-
 .marriage__text,
 .driving__text,
 .certificate__text {
@@ -939,24 +957,6 @@ span {
   padding: 0.7rem;
   resize: none;
   border: 0.8px solid rgba(0, 0, 0, 0.15);
-}
-
-.nextBtn,
-.doneBtn {
-  margin: 3rem 0 0 16rem;
-  width: 4rem;
-  height: 2rem;
-  background-color: #780707;
-  text-align: center;
-  color: white;
-  padding: 0.26rem;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 0.9rem;
-}
-
-.doneBtn {
-  margin-top: 19rem;
 }
 
 .qualification {
