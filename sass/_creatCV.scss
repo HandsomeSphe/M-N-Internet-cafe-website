@@ -170,6 +170,8 @@
 .certificate {
   width: 100%;
   display: flex;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 500;
 }
 .driving {
   margin-bottom: 1rem;
@@ -213,6 +215,9 @@
   border-radius: 5px;
   cursor: pointer;
   font-size: 0.9rem;
+}
+.doneBtn {
+  margin-top: 19rem;
 }
 .qualification {
   width: 60%;
