@@ -388,6 +388,7 @@ input {
   font-weight: 500;
   font-family: poppins, sans-serif;
   color: #666;
+  resize: none;
   border-radius: 2px;
 }
 
@@ -674,7 +675,8 @@ span {
 }
 
 .createCV,
-.progress {
+.progress,
+.schools {
   width: 100%;
   height: 100vh;
   position: relative;
@@ -692,7 +694,8 @@ span {
 }
 
 .createCV__btn,
-.progress__btn {
+.progress__btn,
+.schools__btn {
   width: 20%;
   height: 3rem;
   background-color: #780707;
@@ -739,7 +742,7 @@ span {
 .work {
   width: 1rem;
   height: 1rem;
-  border: 1px solid #666;
+  border: 0.8px solid rgba(0, 0, 0, 0.15);
   border-radius: 50px;
   color: #666;
   background-color: white;
@@ -768,7 +771,8 @@ span {
   height: 100vh;
 }
 
-.Personal {
+.Personal,
+.High__school {
   width: 90%;
   height: 70vh;
   display: -webkit-box;
@@ -785,7 +789,8 @@ span {
   margin-left: 9rem;
 }
 
-.createPersonal__left {
+.createPersonal__left,
+.createSchool__left {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 50%;
           flex: 0 0 50%;
@@ -800,7 +805,8 @@ span {
   height: inherit;
 }
 
-.createPersonal__right {
+.createPersonal__right,
+.createSchool__right {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -810,7 +816,8 @@ span {
 
 .personalName,
 .createPersonal__surname,
-.languages {
+.languages,
+.schoolName {
   width: 60%;
   height: 2.4rem;
   margin-bottom: 1rem;
@@ -845,7 +852,7 @@ span {
   width: 5%;
   height: 2.4rem;
   background-color: white;
-  border: 0.4px solid #666;
+  border: 0.8px solid rgba(0, 0, 0, 0.15);
   border-radius: 3px;
   text-align: center;
 }
@@ -857,12 +864,18 @@ span {
 .postaddress {
   width: 60%;
   height: 8rem;
+  resize: none;
+  border: 0.8px solid rgba(0, 0, 0, 0.15);
 }
 
 .postaddress :active,
-.postaddress:focus {
+.postaddress:focus,
+.postaddress2:active,
+.postaddress3:active,
+.postaddress2:focus,
+.postaddress3:focus {
   outline: none;
-  border: 0.8px solid #000;
+  border: 0.8px solid rgba(0, 0, 0, 0.4);
 }
 
 .cancel {
@@ -894,6 +907,7 @@ span {
 .postaAddress {
   width: 60%;
   font-family: poppins, sans-serif;
+  resize: none;
 }
 
 .postaddress2,
@@ -901,6 +915,10 @@ span {
   width: 60%;
   font-family: poppins, sans-serif;
   margin-bottom: 1rem;
+  font-weight: 500;
+  padding: 0.7rem;
+  resize: none;
+  border: 0.8px solid rgba(0, 0, 0, 0.15);
 }
 
 .nextBtn {
@@ -918,6 +936,7 @@ span {
 
 .qualification {
   width: 60%;
+  border: 0.8px solid rgba(0, 0, 0, 0.15);
 }
 
 .second {
