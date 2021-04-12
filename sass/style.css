@@ -78,7 +78,7 @@ html {
 
 input,
 .contact__button {
-  width: 80%;
+  width: 65%;
   height: 6vh;
   border: 0.5px solid rgba(0, 0, 0, 0.15);
   padding: 0.4rem;
@@ -381,7 +381,7 @@ input {
 }
 
 #message {
-  width: 80%;
+  width: 65%;
   height: 30vh;
   border: 0.5px solid rgba(0, 0, 0, 0.15);
   padding: 1rem 0.5rem;
@@ -676,7 +676,8 @@ span {
 
 .createCV,
 .progress,
-.schools {
+.schools,
+.workExperience {
   width: 100%;
   height: 100vh;
   position: relative;
@@ -695,7 +696,8 @@ span {
 
 .createCV__btn,
 .progress__btn,
-.schools__btn {
+.schools__btn,
+.workExperience__btn {
   width: 20%;
   height: 3rem;
   background-color: #780707;
@@ -817,7 +819,8 @@ span {
 .personalName,
 .createPersonal__surname,
 .languages,
-.schoolName {
+.schoolName,
+.mySkills {
   width: 60%;
   height: 2.4rem;
   margin-bottom: 1rem;
@@ -873,7 +876,9 @@ span {
 .postaddress2:active,
 .postaddress3:active,
 .postaddress2:focus,
-.postaddress3:focus {
+.postaddress3:focus,
+.pastWorkExperience:active,
+.pastWorkExperience:focus {
   outline: none;
   border: 0.8px solid rgba(0, 0, 0, 0.4);
 }
@@ -886,19 +891,31 @@ span {
   cursor: pointer;
 }
 
-.marriage__text {
+.marriage__text,
+.driving__text,
+.certificate__text {
   margin-right: 2rem;
 }
 
-.marriage {
+.marriage,
+.driving,
+.certificate {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
+.driving {
+  margin-bottom: 1rem;
+}
+
 .single,
-.married {
+.married,
+.yes,
+.no,
+.yess,
+.noo {
   width: 1.5rem;
   height: 1.5rem;
   margin: 0 0.1rem 1rem 1rem;
@@ -911,7 +928,8 @@ span {
 }
 
 .postaddress2,
-.postaddress3 {
+.postaddress3,
+.pastWorkExperience {
   width: 60%;
   font-family: poppins, sans-serif;
   margin-bottom: 1rem;
@@ -921,7 +939,8 @@ span {
   border: 0.8px solid rgba(0, 0, 0, 0.15);
 }
 
-.nextBtn {
+.nextBtn,
+.doneBtn {
   margin: 3rem 0 0 16rem;
   width: 4rem;
   height: 2rem;
@@ -976,5 +995,24 @@ span {
   font-weight: 700;
   color: rgba(0, 0, 0, 0.9);
   font-family: poppins, sans-serif;
+}
+
+.pastWork {
+  margin: 1rem 0 0 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pastWork__left {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+}
+
+.pastWork__right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 /*# sourceMappingURL=style.css.map */
