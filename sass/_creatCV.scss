@@ -204,3 +204,25 @@
 .second {
   margin-top: 8rem;
 }
+.donePage {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: poppins, sans-serif;
+}
+.wellDone {
+  color: rgba(0, 0, 0, 0.35);
+}
+.checkmark {
+  width: 10rem;
+  height: 10rem;
+  margin-bottom: 2rem;
+}
+.sentance {
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.9);
+  font-family: poppins, sans-serif;
+}
