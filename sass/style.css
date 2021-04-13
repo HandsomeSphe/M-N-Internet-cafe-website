@@ -1021,4 +1021,33 @@ span {
       -ms-flex: 1;
           flex: 1;
 }
+
+.printer {
+  display: none;
+}
+
+.progress {
+  display: none;
+}
+
+.createCV {
+  display: none;
+}
+
+.schools {
+  display: none;
+}
+
+.workExperience {
+  display: none;
+}
+
+.donePage {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
 /*# sourceMappingURL=style.css.map */
