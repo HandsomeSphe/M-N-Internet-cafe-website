@@ -1,14 +1,19 @@
+.printer {
+  width: 100%;
+  height: 100vh;
+}
+
 .printOut {
   width: 100%;
   height: 100vh;
-  padding: 2rem 0;
+  padding: 1rem 0;
 
   &__printerDetails {
     display: flex;
-    margin-left: 22 rem;
+    margin-left: 2rem;
 
     &--document {
-      width: 49%;
+      width: 52.5%;
       height: 50vh;
       margin: 1rem 0;
       margin-left: 22rem;
@@ -37,9 +42,14 @@
     height: 2rem;
   }
 }
+.file {
+  width: 40%;
+  color: #000;
+  border: none;
+}
 .printOut__button {
   margin-left: 22rem;
-  width: 49%;
+  width: 52.6%;
   border-radius: 4px;
   height: 2.5rem;
   background-color: #780707;
@@ -63,18 +73,19 @@
 }
 .printer__details {
   display: flex;
+
   &--name,
   &--surname {
-    width: 23%;
+    width: 25%;
     height: 2.2rem;
   }
   &--name {
-    margin: 0 2rem 0 22.3rem;
+    margin: 0 2rem 0 22rem;
   }
 }
-.upload {
-  color: #780707;
-  border: none;
-  border-bottom: 1px solid #780707;
-  cursor: pointer;
-}
+// .upload {
+//   color: #780707;
+//   border: none;
+//   border-bottom: 1px solid #780707;
+//   cursor: pointer;
+// }
