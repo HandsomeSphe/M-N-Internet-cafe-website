@@ -83,6 +83,8 @@ const contactsMssg = document.getElementById("message");
 const contactsBtn = document.querySelector(".contact__button");
 
 //\\ the contact form
+
+// this what will happen when you click the send button on the contact form
 contactsBtn.addEventListener("click", function () {
   if (
     contactsName.value.length > 0 &&
@@ -100,6 +102,7 @@ contactsBtn.addEventListener("click", function () {
     alert("Fill in you name, email and your message");
   }
 });
+// this what will happen when you click the return(enter) button on the contact form
 document.addEventListener("keypress", function (event) {
   if (event.keypress === 13 || event.which === 13) {
     if (
@@ -118,4 +121,22 @@ document.addEventListener("keypress", function (event) {
       alert("Fill in you name, email and your message");
     }
   }
+});
+//\\ The print page
+const printerName = document.querySelector(".printer__details--name");
+const printerSurname = document.querySelector(".printer__details--surname");
+const printerDocument = document.querySelector(".upload");
+const printerNumber = document.querySelector(".page__numbers");
+const printerBtn = document.querySelector(".printOut__button");
+
+printerBtn.addEventListener("click", function () {
+  const printerFile = printerDocument.addEventListener("change", (event) => {
+    return event.target.files;
+  });
+  console.log(
+    `${printerName.value}, ${printerSurname.value},  ${printerNumber.value}, ${printerFile}`
+  );
+  printerName.value = "";
+  printerSurname.value = "";
+  printerNumber.value = "";
 });
