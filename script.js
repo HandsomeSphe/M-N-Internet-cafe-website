@@ -130,12 +130,12 @@ const printerNumber = document.querySelector(".page__numbers");
 const printerBtn = document.querySelector(".printOut__button");
 
 printerBtn.addEventListener("click", function () {
-  const printerFile = printerDocument.addEventListener("change", (event) => {
-    return event.target.files;
-  });
+  const file = document.querySelector(".file");
+
   console.log(
-    `${printerName.value}, ${printerSurname.value},  ${printerNumber.value}, ${printerFile}`
+    `${printerName.value}, ${printerSurname.value},  ${printerNumber.value}`
   );
+
   printerName.value = "";
   printerSurname.value = "";
   printerNumber.value = "";
