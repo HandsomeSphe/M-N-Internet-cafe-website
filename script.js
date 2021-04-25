@@ -126,17 +126,24 @@ document.addEventListener("keypress", function (event) {
 const printerName = document.querySelector(".printer__details--name");
 const printerSurname = document.querySelector(".printer__details--surname");
 const printerDocument = document.querySelector(".upload");
-const printerNumber = document.querySelector(".page__numbers");
+let printerNumber = document.querySelector(".page__numbers");
 const printerBtn = document.querySelector(".printOut__button");
 
 printerBtn.addEventListener("click", function () {
   const file = document.querySelector(".file");
+  if (
+    printerName.value.length > 0 &&
+    printerSurname.value.length > 0 &&
+    printerNumber.value.length > 0
+  ) {
+    console.log(
+      `${printerName.value}, ${printerSurname.value},  ${printerNumber.value}`
+    );
 
-  console.log(
-    `${printerName.value}, ${printerSurname.value},  ${printerNumber.value}`
-  );
-
-  printerName.value = "";
-  printerSurname.value = "";
-  printerNumber.value = "";
+    printerName.value = "";
+    printerSurname.value = "";
+    printerNumber.value = "";
+  } else {
+    alert(`please make sure all input are filled `);
+  }
 });

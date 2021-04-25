@@ -168,27 +168,57 @@
   <section id="section5" class="printer">
     <div class="printer__heading">Print a document</div>
     <div class="printer__details">
-      <input type="name" class="printer__details--name" placeholder="name" />
-      <input
-        type="name"
-        class="printer__details--surname"
-        placeholder="surname"
-      />
-    </div>
-    <div class="printOut__printerDetails--document">
-      <img class="dropIcon" src="Icons/iconfinder_copy_370087.svg" />
-      <div class="text">
-        Drag & drop/<span class="upload"
-          ><input type="file" class="file" multiple
-        /></span>
-      </div>
-    </div>
-    <div class="pages">
-      <div class="page">Pages</div>
-      <input class="page__numbers" type="number" placeholder="" />
-    </div>
+      <form
+  action="https://formspree.io/f/xbjqlvjo"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="_replyto">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
 
-    <div class="printOut__button">Print</div>
+  <!-- your other form fields go here -->
+
+  <button type="submit">Send</button>
+</form>
+      <!--form
+      action="https://formspree.io/f/siphelelehandsome@gmail.com"
+      method="POST"
+    >
+        <input
+          type="text"
+          name="name"
+          name="_replyto"
+          class="printer__details--name"
+          placeholder="name"
+        />
+        <input
+          type="text"
+          name="surname"
+          name="_replyto"
+          class="printer__details--surname"
+          placeholder="surname"
+        />
+      </div>
+      <div class="printOut__printerDetails--document">
+        <img class="dropIcon" src="Icons/iconfinder_copy_370087.svg" />
+        <div class="text">
+          Drag & drop/<span class="upload"
+            ><input type="file" name="file" class="file" multiple
+          /></span>
+        </div>
+      </div>
+      <div class="pages">
+        <div class="page">Pages</div>
+        <input class="page__numbers" type="number" placeholder="" />
+      </div>
+      <button type="submit" class="printOut__button">Print</button>
+      </form--->
+
   </section>
 
   <!--This is the progress page-->
