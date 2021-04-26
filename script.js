@@ -140,9 +140,9 @@ printerBtn.addEventListener("click", function () {
       `${printerName.value}, ${printerSurname.value},  ${printerNumber.value}`
     );
 
-    printerName.value = "";
-    printerSurname.value = "";
-    printerNumber.value = "";
+    // printerName.value = "";
+    // printerSurname.value = "";
+    // printerNumber.value = "";
   } else {
     alert(`please make sure all input are filled `);
   }
