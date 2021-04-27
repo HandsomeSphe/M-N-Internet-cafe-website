@@ -130,3 +130,73 @@ printerBtn.addEventListener("click", function () {
     alert(`please make sure all input are filled `);
   }
 });
+
+// the create a cv page
+
+var CreateB = document.querySelector("#createB");
+let proPage = document.querySelector("#section6");
+const createCvPage = document.querySelector(".createCV");
+const cancelBtnOne = document.querySelector("#One");
+const nextBtnOne = document.querySelector("#next1");
+const schoolsPage = document.querySelector(".schools");
+const cancelBtnTwo = document.querySelector("#Two");
+const nextBtnTwo = document.querySelector("#next2");
+const workPage = document.querySelector(".workExperience");
+const cancelBtnThree = document.querySelector("#Three");
+const doneBtn = document.querySelector(".doneBtn");
+const donePage = document.querySelector(".donePage");
+// this is what will happen if you click the big red button written create a cv
+CreateB.addEventListener("click", function () {
+  createCvPage.style.display = "block";
+  createCvPage.scrollIntoView({
+    behavior: "smooth",
+  });
+});
+cancelBtnOne.addEventListener("click", function () {
+  proPage.scrollIntoView({
+    behavior: "smooth",
+  });
+  setTimeout(function () {
+    createCvPage.style.display = "none";
+  }, 1000);
+});
+nextBtnOne.addEventListener("click", function () {
+  schoolsPage.style.display = "block";
+  schoolsPage.scrollIntoView({
+    behavior: "smooth",
+  });
+});
+cancelBtnTwo.addEventListener("click", function () {
+  createCvPage.scrollIntoView({
+    behavior: "smooth",
+  });
+  setTimeout(function () {
+    schoolsPage.style.display = "none";
+  }, 1000);
+});
+nextBtnTwo.addEventListener("click", function () {
+  workPage.style.display = "block";
+  workPage.scrollIntoView({
+    behavior: "smooth",
+  });
+});
+cancelBtnThree.addEventListener("click", function () {
+  schoolsPage.scrollIntoView({
+    behavior: "smooth",
+  });
+  setTimeout(function () {
+    workPage.style.display = "none";
+  }, 1000);
+});
+doneBtn.addEventListener("click", function () {
+  donePage.style.display = "flex";
+  donePage.scrollIntoView({
+    behavior: "smooth",
+  });
+  setTimeout(function () {
+    schoolsPage.style.display = "none";
+    workPage.style.display = "none";
+    createCvPage.style.display = "none";
+    proPage.style.display = "none";
+  }, 1000);
+});
