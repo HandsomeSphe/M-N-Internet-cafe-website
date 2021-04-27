@@ -110,27 +110,28 @@
     <div class="contacts__heading">Contact us</div>
     <div class="contact__wrapper">
       <div class="contact__input">
-        <form
-        action="https://formspree.io/f/xbjqlvjo"
-        method="POST"
-      >
-        <label>
-          Your name:
-          <input type="name" name="_replyto">
-        </label>
-        <label>
-          Your email:
-          <input type="email" name="_replyto">
-        </label>
-        <label>
-          Your message:
-          <textarea name="message"></textarea>
-        </label>
-      
-        <!-- your other form fields go here -->
-      
-        <button type="submit">Send</button>
-      </form>
+        <form action="https://formspree.io/f/xbjqlvjo"
+        method="POST">
+          <div class="form__group">
+            <label for="firstName">
+              <input type="text" class="name" name="firstName" placeholder="name">
+            </label>
+          </div>
+          <div class="form__group">
+            <label for="email">
+              <input type="email" class="email" name="email" placeholder="email">
+            </label>
+          </div>
+          <textarea
+          name="message"
+          id="message"
+          cols="30"
+          rows="20"
+          placeholder="Message"
+          
+        ></textarea>
+        <button type="submit" class="send" id="sendBtn">send</button>
+       </form>
           <!-- <form  action="https://formspree.io/f/xbjqlvjo"
           method="POST">
           <label >
@@ -198,24 +199,8 @@
   <section id="section5" class="printer">
     <div class="printer__heading">Print a document</div>
     <div class="printer__details">
+
       <form
-  action="https://formspree.io/f/xbjqlvjo"
-  method="POST"
->
-  <label>
-    Your email:
-    <input type="email" name="_replyto">
-  </label>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
-
-  <!-- your other form fields go here -->
-
-  <button type="submit">Send</button>
-</form>
-      <!--form
       action="https://formspree.io/f/siphelelehandsome@gmail.com"
       method="POST"
     >
@@ -247,7 +232,7 @@
         <input class="page__numbers" type="number" placeholder="" />
       </div>
       <button type="submit" class="printOut__button">Print</button>
-      </form--->
+      </form>
 
   </section>
 

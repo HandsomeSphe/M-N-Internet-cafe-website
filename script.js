@@ -80,7 +80,7 @@ printDocumentBtn.addEventListener("click", function () {
 const contactsName = document.querySelector(".name");
 const contactsEmail = document.querySelector(".email");
 const contactsMssg = document.getElementById("message");
-const contactsBtn = document.querySelector(".contact__button");
+const contactsBtn = document.querySelector("#sendBtn");
 
 //\\ the contact form
 
@@ -94,34 +94,17 @@ contactsBtn.addEventListener("click", function () {
     console.log(
       `Name:${contactsName.value}, Email address:${contactsEmail.value}, Message:${contactsMssg.value}`
     );
-    (contactsName.value = ""),
-      (contactsEmail.value = ""),
-      (contactsMssg.value = "");
-    contactsName.focus();
-  } else {
-    alert("Fill in you name, email and your message");
-  }
-});
-// this what will happen when you click the return(enter) button on the contact form
-document.addEventListener("keypress", function (event) {
-  if (event.keypress === 13 || event.which === 13) {
-    if (
-      contactsName.value.length > 0 &&
-      contactsEmail.value.length > 0 &&
-      contactsMssg.value.length > 0
-    ) {
-      console.log(
-        `Name:${contactsName.value}, Email address:${contactsEmail.value}, Message:${contactsMssg.value}`
-      );
+    setTimeout(function () {
       (contactsName.value = ""),
         (contactsEmail.value = ""),
         (contactsMssg.value = "");
       contactsName.focus();
-    } else {
-      alert("Fill in you name, email and your message");
-    }
+    }, 5000);
+  } else {
+    alert("Fill in you name, email and your message");
   }
 });
+
 //\\ The print page
 const printerName = document.querySelector(".printer__details--name");
 const printerSurname = document.querySelector(".printer__details--surname");
@@ -140,9 +123,9 @@ printerBtn.addEventListener("click", function () {
       `${printerName.value}, ${printerSurname.value},  ${printerNumber.value}`
     );
 
-    // printerName.value = "";
-    // printerSurname.value = "";
-    // printerNumber.value = "";
+    printerName.value = "";
+    printerSurname.value = "";
+    printerNumber.value = "";
   } else {
     alert(`please make sure all input are filled `);
   }

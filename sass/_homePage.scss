@@ -3,6 +3,14 @@
   height: 92vh;
   display: flex;
   position: relative;
+
+  @media (max-width: 320px) {
+    color: red;
+    background-color: blue;
+    width: 50%;
+    height: 40vh;
+    flex-direction: column;
+  }
   &__text {
     flex: 0 0 50%;
     width: 100%;

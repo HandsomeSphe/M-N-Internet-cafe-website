@@ -10,6 +10,17 @@
   overflow: hidden;
   z-index: 4000;
   background-color: white;
+  @media only screen and (max-width: 375px) {
+    width: 45%;
+    height: 4.3vh;
+    background-color: blue;
+  }
+
+  @media only screen and (max-width: 320px) {
+    width: 40%;
+    height: 4vh;
+    background-color: brown;
+  }
 
   &__logo {
     width: 100%;
