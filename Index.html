@@ -110,50 +110,36 @@
     <div class="contacts__heading">Contact us</div>
     <div class="contact__wrapper">
       <div class="contact__input">
-        <form action="https://formspree.io/f/xbjqlvjo"
-        method="POST">
+        <form action="https://formspree.io/f/xbjqlvjo" method="POST">
           <div class="form__group">
             <label for="firstName">
-              <input type="text" class="name" name="firstName" placeholder="name">
+              <input
+                type="text"
+                class="name"
+                name="firstName"
+                placeholder="name"
+              />
             </label>
           </div>
           <div class="form__group">
             <label for="email">
-              <input type="email" class="email" name="email" placeholder="email">
+              <input
+                type="email"
+                class="email"
+                name="email"
+                placeholder="email"
+              />
             </label>
           </div>
           <textarea
-          name="message"
-          id="message"
-          cols="30"
-          rows="20"
-          placeholder="Message"
-          
-        ></textarea>
-        <button type="submit" class="send" id="sendBtn">send</button>
-       </form>
-          <!-- <form  action="https://formspree.io/f/xbjqlvjo"
-          method="POST">
-          <label >
-            <input type="text" name="_replyto" class="name" placeholder="Your name" />
-          </label>
-          <label >
-            <input type="email" name="_replyto" class="email" placeholder="Your email"/>
-          </label>
-          <label >
-            <textarea
-              name="message"
-              id="message"
-              cols="30"
-              rows="20"
-              placeholder="Message"
-              
-            ></textarea>
-          </label>
-            <div class="contact__button">
-              <button type="submit" class="send" id="sendBtn">send</button>
-            </div>
-          </form> -->
+            name="message"
+            id="message"
+            cols="30"
+            rows="20"
+            placeholder="Message"
+          ></textarea>
+          <button type="submit" class="send" id="sendBtn">send</button>
+        </form>
       </div>
       <div class="contact__info">
         <div class="contact__info--number">
@@ -199,25 +185,55 @@
   <section id="section5" class="printer">
     <div class="printer__heading">Print a document</div>
     <div class="printer__details">
-
       <form
+        action="https://formspree.io/f/siphelelehandsome@gmail.com"
+        method="POST"
+      >
+        <div class="form__group">
+          <label for="name">
+            <input
+              type="text"
+              placeholder="name"
+              class="printer__details--name"
+              name="name"
+            />
+          </label>
+        </div>
+        <div class="form__group">
+          <label for="surname">
+            <input
+              type="text"
+              placeholder="surname"
+              class="printer__details--surname"
+              name="surname"
+            />
+          </label>
+        </div>
+        <div class="printOut__printerDetails--document">
+          <img class="dropIcon" src="Icons/iconfinder_copy_370087.svg" />
+          <div class="text">
+            Drag & drop/<span class="upload"
+              ><input type="file" name="file" class="file" multiple
+            /></span>
+          </div>
+        </div>
+        <div class="form__group">
+          <label for="pages">
+            <div class="pages">
+              <div class="page">Pages</div>
+              <input class="page__numbers" type="number" name="pages" />
+            </div>
+          </label>
+        </div>
+        <button type="submit" class="printOut__button">Print</button>
+      </form>
+    </div>
+
+    <!-- <form
       action="https://formspree.io/f/siphelelehandsome@gmail.com"
       method="POST"
     >
-        <input
-          type="text"
-          name="name"
-          name="_replyto"
-          class="printer__details--name"
-          placeholder="name"
-        />
-        <input
-          type="text"
-          name="surname"
-          name="_replyto"
-          class="printer__details--surname"
-          placeholder="surname"
-        />
+
       </div>
       <div class="printOut__printerDetails--document">
         <img class="dropIcon" src="Icons/iconfinder_copy_370087.svg" />
@@ -232,8 +248,7 @@
         <input class="page__numbers" type="number" placeholder="" />
       </div>
       <button type="submit" class="printOut__button">Print</button>
-      </form>
-
+      </form> -->
   </section>
 
   <!--This is the progress page-->
