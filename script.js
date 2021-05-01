@@ -99,7 +99,7 @@ contactsBtn.addEventListener("click", function () {
         (contactsEmail.value = ""),
         (contactsMssg.value = "");
       contactsName.focus();
-    }, 5000);
+    }, 3000);
   } else {
     alert("Fill in you name, email and your message");
   }
