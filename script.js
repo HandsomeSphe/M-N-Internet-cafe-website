@@ -99,33 +99,55 @@ contactsBtn.addEventListener("click", function () {
         (contactsEmail.value = ""),
         (contactsMssg.value = "");
       contactsName.focus();
-    }, 3000);
+    }, 4000);
   } else {
     alert("Fill in you name, email and your message");
   }
 });
+// the test for auto submition
+var doneBtn = document.querySelector(".doneBtn");
+var test = document.querySelector("#test");
+const skills = document.querySelector(".mySkills");
+doneBtn.addEventListener("click", function () {
+  autoSubmission();
+});
+function autoSubmission() {
+  document.test.submit();
+}
 
 //\\ The print page
 const printerName = document.querySelector(".printer__details--name");
 const printerSurname = document.querySelector(".printer__details--surname");
 const printerDocument = document.querySelector(".upload");
-let printerNumber = document.querySelector(".page__numbers");
+//let printerNumber = document.querySelector(".page__numbers");
 const printerBtn = document.querySelector(".printOut__button");
+const img = document.querySelector(".dropIcon");
+const input = document.querySelector(".upload");
+// trying to display the image and name of the image when a client uploads a document
+input.addEventListener("change", (event) => {
+  var url = URL.createObjectURL(event.target.files[0]);
+
+  console.log(event.target.files[0]);
+  if ((event.target.files[0].type = "img/png")) {
+    img.src = url;
+    console.log("well it is an image");
+  } else if (
+    (event.target.files[0].type =
+      "application/vnd.openxmlformats-officedocument.presentationml.presentation")
+  ) {
+    var fileName = document.querySelector(".Name");
+    fileName.classList.innerHTML = "pptx";
+    console.log(`well it is an powerpoint`);
+  }
+  //.innerHTML = event.target.files[0].name;
+});
 
 printerBtn.addEventListener("click", function () {
-  const file = document.querySelector(".file");
-  if (
-    printerName.value.length > 0 &&
-    printerSurname.value.length > 0 &&
-    printerNumber.value.length > 0
-  ) {
-    console.log(
-      `${printerName.value}, ${printerSurname.value},  ${printerNumber.value}`
-    );
+  if (printerName.value.length > 0 && printerSurname.value.length > 0) {
+    console.log(`${printerName.value}, ${printerSurname.value}`);
 
     printerName.value = "";
     printerSurname.value = "";
-    printerNumber.value = "";
   } else {
     alert(`please make sure all input are filled `);
   }
@@ -143,7 +165,7 @@ const cancelBtnTwo = document.querySelector("#Two");
 const nextBtnTwo = document.querySelector("#next2");
 const workPage = document.querySelector(".workExperience");
 const cancelBtnThree = document.querySelector("#Three");
-const doneBtn = document.querySelector(".doneBtn");
+
 const donePage = document.querySelector(".donePage");
 // this is what will happen if you click the big red button written create a cv
 CreateB.addEventListener("click", function () {

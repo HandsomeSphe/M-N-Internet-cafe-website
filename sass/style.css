@@ -744,9 +744,13 @@ span {
 }
 
 .dropIcon {
-  width: 8rem;
-  height: 8rem;
-  margin: 2rem 0 7rem 0;
+  width: 17rem;
+  height: auto;
+}
+
+.Name {
+  width: 30%;
+  height: 3rem;
 }
 
 .printer__heading {
@@ -761,15 +765,33 @@ span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
 }
 
 .printer__details--name, .printer__details--surname {
-  width: 25%;
+  width: 23%;
   height: 2.2rem;
 }
 
 .printer__details--name {
   margin: 0 2rem 0 22rem;
+}
+
+.printer__details--surname {
+  margin: 1.5rem 0 0 22rem;
+}
+
+.form {
+  width: 100%;
+}
+
+.label {
+  width: 3rem;
+  margin: 0;
 }
 
 .emailAddress {

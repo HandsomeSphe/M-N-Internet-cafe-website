@@ -60,9 +60,13 @@
   cursor: pointer;
 }
 .dropIcon {
-  width: 8rem;
-  height: 8rem;
-  margin: 2rem 0 7rem 0;
+  width: 17rem;
+  height: auto; // 15rem;
+  //margin: 2rem 0 7rem 0;
+}
+.Name {
+  width: 30%;
+  height: 3rem;
 }
 .printer__heading {
   margin: 0 30% 2rem 45%;
@@ -73,15 +77,26 @@
 }
 .printer__details {
   display: flex;
-
+  flex-direction: row;
+  width: 100%;
   &--name,
   &--surname {
-    width: 25%;
+    width: 23%;
     height: 2.2rem;
   }
   &--name {
     margin: 0 2rem 0 22rem;
   }
+  &--surname {
+    margin: 1.5rem 0 0 22rem;
+  }
+}
+.form {
+  width: 100%;
+}
+.label {
+  width: 3rem;
+  margin: 0;
 }
 // .upload {
 //   color: #780707;
