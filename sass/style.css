@@ -15,6 +15,13 @@ html {
   font-size: 1rem;
 }
 
+@media only screen and (max-width: 375px) {
+  html {
+    font-size: 60%;
+    font-weight: 400;
+  }
+}
+
 @media only screen and (max-width: 320px) {
   html {
     font-size: 50%;
@@ -113,6 +120,15 @@ input,
   font-family: poppins, sans-serif;
 }
 
+@media only screen and (max-width: 320px) {
+  input,
+  .contact__button {
+    width: 100%;
+    height: 6vh;
+    font-size: 1.3rem;
+  }
+}
+
 .contact__button {
   margin-top: 1rem;
   background-color: #780707;
@@ -197,6 +213,17 @@ input,
   height: 40px;
 }
 
+@media only screen and (max-width: 320px) {
+  #sendBtn {
+    width: 100%;
+    height: 5vh;
+    margin-bottom: 0rem;
+    border-radius: 0.4rem;
+    margin-top: 0.5rem;
+    font-size: 1.3rem;
+  }
+}
+
 .navbar {
   width: 100%;
   height: 8vh;
@@ -215,7 +242,7 @@ input,
   background-color: white;
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 20em) {
   .navbar {
     width: 100%;
     height: 8vh;
@@ -236,9 +263,12 @@ input,
   cursor: pointer;
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 20em) {
   .navbar__logo {
     padding: 1.1rem 0 0 3rem;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
   }
 }
 
@@ -259,8 +289,15 @@ input,
   padding: 1rem;
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 20em) {
   .navbar__list {
+    padding-right: 1.4rem;
+    font-size: 1rem;
+    font-weight: 500;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     display: none;
   }
 }
@@ -308,6 +345,12 @@ input,
   font-weight: 500;
 }
 
+@media only screen and (max-width: 320px) {
+  .services__heading {
+    margin: 0 30% 0 43%;
+  }
+}
+
 .services__cards {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -322,6 +365,8 @@ input,
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center;
   }
 }
 
@@ -341,7 +386,7 @@ input,
 @media only screen and (max-width: 320px) {
   .card {
     width: 70%;
-    height: 25vh;
+    height: 27vh;
     margin-bottom: 0.6rem;
   }
 }
@@ -450,8 +495,9 @@ input,
 
 @media only screen and (max-width: 320px) {
   .contacts {
-    width: 70%;
-    height: 63vh;
+    width: 100%;
+    height: 100vh;
+    padding-top: 23rem;
   }
 }
 
@@ -460,6 +506,13 @@ input,
   font-weight: 500;
   color: rgba(0, 0, 0, 0.45);
   font-weight: 500;
+}
+
+@media only screen and (max-width: 320px) {
+  .contacts__heading {
+    margin: 6rem 0 0 17rem;
+    fint-size: 0.9rem;
+  }
 }
 
 .contact__wrapper {
@@ -476,6 +529,7 @@ input,
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-top: 3rem;
   }
 }
 
@@ -493,6 +547,16 @@ input,
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media only screen and (max-width: 320px) {
+  .contact__input {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
 }
 
 .contact__info {
@@ -593,6 +657,14 @@ input {
   border-radius: 2px;
 }
 
+@media only screen and (max-width: 320px) {
+  #message {
+    width: 100%;
+    height: 15vh;
+    font-size: 1.3rem;
+  }
+}
+
 #message:focus,
 #message:active {
   outline: none;
@@ -627,8 +699,8 @@ input {
 @media only screen and (max-width: 320px) {
   .homepage {
     width: 100%;
-    height: 95vh;
-    margin-bottom: 0;
+    height: 75vh;
+    margin-bottom: 0rem;
   }
 }
 
@@ -706,6 +778,12 @@ input {
   z-index: 1;
 }
 
+@media only screen and (max-width: 320px) {
+  .svg {
+    top: 70%;
+  }
+}
+
 span {
   color: rgba(120, 7, 7, 0.8);
 }
@@ -760,6 +838,14 @@ span {
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
+}
+
+.heading {
+  position: absolute;
+  top: 7.5%;
+  left: 50%;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.45);
 }
 
 .about {
@@ -834,14 +920,6 @@ span {
   .about__description--second {
     margin: 0;
   }
-}
-
-.heading {
-  position: absolute;
-  top: 7.5%;
-  left: 50%;
-  font-weight: 500;
-  color: rgba(0, 0, 0, 0.45);
 }
 
 .printer {

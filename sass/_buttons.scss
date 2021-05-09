@@ -57,6 +57,11 @@ input,
   border-radius: 2px;
   font-weight: 500;
   font-family: poppins, sans-serif;
+  @media only screen and (max-width: 320px) {
+    width: 100%;
+    height: 6vh;
+    font-size: 1.3rem;
+  }
 }
 
 .contact__button {
@@ -121,4 +126,12 @@ input,
   border: none;
   width: 65%;
   height: 40px;
+  @media only screen and (max-width: 320px) {
+    width: 100%;
+    height: 5vh;
+    margin-bottom: 0rem;
+    border-radius: 0.4rem;
+    margin-top: 0.5rem;
+    font-size: 1.3rem;
+  }
 }

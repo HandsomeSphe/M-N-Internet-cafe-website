@@ -11,8 +11,14 @@ html {
   font-family: poppins, sans-serif;
   font-weight: 400;
   font-size: 1rem;
+  @media only screen and(max-width:375px) {
+    font-size: 60%;
+    font-weight: 400;
+  }
   @media only screen and(max-width:320px) {
     font-size: 50%;
     font-weight: 300;
   }
 }
+//1em = 16px
+//320/16

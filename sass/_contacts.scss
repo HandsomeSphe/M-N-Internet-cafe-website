@@ -4,8 +4,9 @@
   background: url("/Images/bg.jpg");
   padding-top: 1rem;
   @media only screen and (max-width: 320px) {
-    width: 70%;
-    height: 63vh;
+    width: 100%;
+    height: 100vh;
+    padding-top: 23rem;
   }
 
   &__heading {
@@ -13,6 +14,10 @@
     font-weight: 500;
     color: rgba(0, 0, 0, 0.45);
     font-weight: 500;
+    @media only screen and (max-width: 320px) {
+      margin: 6rem 0 0 17rem;
+      fint-size: 0.9rem;
+    }
   }
 }
 .contact {
@@ -22,6 +27,7 @@
     padding: 0 4rem;
     @media only screen and (max-width: 320px) {
       flex-direction: column;
+      margin-top: 3rem;
     }
   }
   &__input {
@@ -31,6 +37,10 @@
     padding: 1.3rem;
     display: flex;
     flex-direction: column;
+    @media only screen and (max-width: 320px) {
+      justify-content: center;
+      align-content: center;
+    }
   }
 
   &__info {
@@ -118,6 +128,11 @@ input {
   // margin-top: 0.2rem;
   // box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.2), 4px 0px 15px rgba(0, 0, 0, 0.2);
   border-radius: 2px;
+  @media only screen and (max-width: 320px) {
+    width: 100%;
+    height: 15vh;
+    font-size: 1.3rem;
+  }
 }
 #message:focus,
 #message:active {

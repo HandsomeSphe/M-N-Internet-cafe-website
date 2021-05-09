@@ -5,8 +5,8 @@
   position: relative;
   @media only screen and (max-width: 320px) {
     width: 100%;
-    height: 95vh;
-    margin-bottom: 0;
+    height: 75vh;
+    margin-bottom: 0rem;
   }
 
   &__text {
@@ -63,6 +63,9 @@
   top: 62%;
   right: 0;
   z-index: 1;
+  @media only screen and (max-width: 320px) {
+    top: 70%;
+  }
 }
 
 span {
@@ -90,6 +93,15 @@ span {
     transform: translateX(0);
   }
 }
+
+.heading {
+  position: absolute;
+  top: 7.5%;
+  left: 50%;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.45);
+}
+
 //about section
 .about {
   width: 100%;
@@ -138,11 +150,4 @@ span {
       }
     }
   }
-}
-.heading {
-  position: absolute;
-  top: 7.5%;
-  left: 50%;
-  font-weight: 500;
-  color: rgba(0, 0, 0, 0.45);
 }
