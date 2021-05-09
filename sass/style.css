@@ -17,7 +17,7 @@ html {
 
 @media only screen and (max-width: 320px) {
   html {
-    font-size: 30%;
+    font-size: 50%;
     font-weight: 300;
   }
 }
@@ -38,6 +38,16 @@ html {
   transition: 0.5s ease-in-out;
 }
 
+@media only screen and (max-width: 320px) {
+  .createCV__button,
+  .printDocument__button {
+    height: 2.5rem;
+    text-align: center;
+    padding-top: 0.3rem;
+    font-size: 1.1rem;
+  }
+}
+
 .createCV__button {
   -webkit-animation: appear 3s ease-in;
           animation: appear 3s ease-in;
@@ -55,6 +65,15 @@ html {
   height: 5.3vh;
   -webkit-transform: translateY(-0.4rem);
           transform: translateY(-0.4rem);
+}
+
+@media only screen and (max-width: 320px) {
+  .createCV__button:hover,
+  .printDocument__button:hover {
+    height: 2rem;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 
 @-webkit-keyframes appear {
@@ -198,8 +217,8 @@ input,
 
 @media only screen and (max-width: 320px) {
   .navbar {
-    width: 70%;
-    height: 6vh;
+    width: 100%;
+    height: 8vh;
   }
 }
 
@@ -275,6 +294,13 @@ input,
   padding-top: 7rem;
 }
 
+@media only screen and (max-width: 320px) {
+  .services {
+    width: 100%;
+    height: 63vh;
+  }
+}
+
 .services__heading {
   margin: 0 30% 0 50%;
   font-weight: 500;
@@ -287,6 +313,16 @@ input,
   display: -ms-flexbox;
   display: flex;
   margin: 12rem 3rem 0 5rem;
+}
+
+@media only screen and (max-width: 320px) {
+  .services__cards {
+    margin: 6rem 1rem 0 7rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .card {
@@ -302,11 +338,30 @@ input,
   margin-left: 2.5rem;
 }
 
+@media only screen and (max-width: 320px) {
+  .card {
+    width: 70%;
+    height: 25vh;
+    margin-bottom: 0.6rem;
+  }
+}
+
 .card__title {
   margin-left: 3.5rem;
   color: black;
   font-weight: 600;
   margin-bottom: 1.4rem;
+}
+
+@media only screen and (max-width: 320px) {
+  .card__title {
+    text-align: center;
+    margin-left: 0;
+  }
+}
+
+.card__title:not(:last-child) {
+  margin-right: 1.8rem;
 }
 
 .card__description {
@@ -319,6 +374,12 @@ input,
   margin-right: 7rem;
 }
 
+@media only screen and (max-width: 320px) {
+  .card:not(:last-child) {
+    margin-right: 1rem;
+  }
+}
+
 .card__icon {
   background-color: rgba(120, 7, 7, 0.2);
   width: 6.5rem;
@@ -328,8 +389,21 @@ input,
   margin-bottom: 1.2rem;
 }
 
+@media only screen and (max-width: 320px) {
+  .card__icon {
+    width: 5rem;
+    height: 7vh;
+  }
+}
+
 #globe {
   margin-left: 1.8rem;
+}
+
+@media only screen and (max-width: 320px) {
+  #globe {
+    margin-left: 1.3rem;
+  }
 }
 
 .icon {
@@ -339,12 +413,32 @@ input,
   margin: 1.5rem 1.4rem 0 1.7rem;
 }
 
+@media only screen and (max-width: 320px) {
+  .icon {
+    width: 2.6rem;
+    height: 2.6rem;
+    margin: 1.2rem 1rem 0 1.4rem;
+  }
+}
+
 #print {
   margin-left: 4.6rem;
 }
 
+@media only screen and (max-width: 320px) {
+  #print {
+    margin-left: 2.2rem;
+  }
+}
+
 #copy {
   margin-left: 3.5rem;
+}
+
+@media only screen and (max-width: 320px) {
+  #copy {
+    margin-left: 2.5rem;
+  }
 }
 
 .contacts {
@@ -352,6 +446,13 @@ input,
   height: 100vh;
   background: url("/Images/bg.jpg");
   padding-top: 1rem;
+}
+
+@media only screen and (max-width: 320px) {
+  .contacts {
+    width: 70%;
+    height: 63vh;
+  }
 }
 
 .contacts__heading {
@@ -367,6 +468,15 @@ input,
   display: flex;
   margin-top: 5rem;
   padding: 0 4rem;
+}
+
+@media only screen and (max-width: 320px) {
+  .contact__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .contact__input {
@@ -498,6 +608,13 @@ input {
   color: white;
 }
 
+@media only screen and (max-width: 320px) {
+  .footer {
+    width: 100%;
+    margin: 0;
+  }
+}
+
 .homepage {
   max-width: 100%;
   height: 92vh;
@@ -505,6 +622,14 @@ input {
   display: -ms-flexbox;
   display: flex;
   position: relative;
+}
+
+@media only screen and (max-width: 320px) {
+  .homepage {
+    width: 100%;
+    height: 95vh;
+    margin-bottom: 0;
+  }
 }
 
 .homepage__text {
@@ -517,12 +642,27 @@ input {
   padding: 18rem 0 0 6rem;
 }
 
+@media only screen and (max-width: 320px) {
+  .homepage__text {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    padding-top: 15rem;
+  }
+}
+
 .homepage__text--main {
   font-size: 3.5rem;
   font-weight: 500;
   color: #000;
   -webkit-animation: moveIn 2s ease-in;
           animation: moveIn 2s ease-in;
+}
+
+@media only screen and (max-width: 320px) {
+  .homepage__text--main {
+    font-size: 2.8rem;
+  }
 }
 
 .homepage__text--buttons {
@@ -548,6 +688,13 @@ input {
   z-index: 1;
   -webkit-animation: dropdown 2s ease-in;
           animation: dropdown 2s ease-in;
+}
+
+@media only screen and (max-width: 320px) {
+  .img {
+    display: none;
+    visibility: none;
+  }
 }
 
 .svg {
@@ -626,6 +773,15 @@ span {
   position: relative;
 }
 
+@media only screen and (max-width: 320px) {
+  .about {
+    width: 100%;
+    height: 63vh;
+    padding-right: 1.7rem;
+    margin: 0;
+  }
+}
+
 .about__heading {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 50%;
@@ -636,9 +792,25 @@ span {
   line-height: 128.4%;
 }
 
+@media only screen and (max-width: 320px) {
+  .about__heading {
+    font-size: 2rem;
+    padding: 8rem 0 0 3rem;
+  }
+}
+
 .about__description {
   padding: 8.8rem 0 0 3.5rem;
   font-size: 1.1rem;
+}
+
+@media only screen and (max-width: 320px) {
+  .about__description {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    padding: 8rem 0 0 3rem;
+  }
 }
 
 .about__description--main {
@@ -647,9 +819,21 @@ span {
   color: #666;
 }
 
+@media only screen and (max-width: 320px) {
+  .about__description--main {
+    margin-bottom: 1rem;
+  }
+}
+
 .about__description--second {
   color: #666;
   font-weight: medium;
+}
+
+@media only screen and (max-width: 320px) {
+  .about__description--second {
+    margin: 0;
+  }
 }
 
 .heading {
@@ -663,6 +847,13 @@ span {
 .printer {
   width: 100%;
   height: 100vh;
+}
+
+@media only screen and (max-width: 320px) {
+  .printer {
+    width: 70%;
+    height: 63vh;
+  }
 }
 
 .printOut {
@@ -816,6 +1007,13 @@ span {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media only screen and (max-width: 320px) {
+  .progress {
+    width: 70%;
+    height: 63vh;
+  }
 }
 
 .progressBar {

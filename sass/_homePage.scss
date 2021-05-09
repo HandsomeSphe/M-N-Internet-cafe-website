@@ -3,6 +3,11 @@
   height: 92vh;
   display: flex;
   position: relative;
+  @media only screen and (max-width: 320px) {
+    width: 100%;
+    height: 95vh;
+    margin-bottom: 0;
+  }
 
   &__text {
     flex: 0 0 50%;
@@ -10,11 +15,19 @@
     height: 93vh;
     color: #666;
     padding: 18rem 0 0 6rem;
+    @media only screen and (max-width: 320px) {
+      flex: 0 0 100%;
+      padding-top: 15rem;
+    }
+
     &--main {
       font-size: 3.5rem;
       font-weight: 500;
       color: #000;
       animation: moveIn 2s ease-in;
+      @media only screen and (max-width: 320px) {
+        font-size: 2.8rem;
+      }
     }
     &--buttons {
       display: flex;
@@ -36,6 +49,10 @@
   margin: 12rem 0rem 1rem 9rem;
   z-index: 1;
   animation: dropdown 2s ease-in;
+  @media only screen and (max-width: 320px) {
+    display: none;
+    visibility: none;
+  }
 }
 
 .svg {
@@ -81,24 +98,44 @@ span {
   display: flex;
   background-image: url("/Images/bg.jpg");
   position: relative;
+  @media only screen and (max-width: 320px) {
+    width: 100%;
+    height: 63vh;
+    padding-right: 1.7rem;
+    margin: 0;
+  }
   &__heading {
     flex: 0 0 50%;
     font-size: 3rem;
     padding: 8.8rem 15rem 0 2rem;
     font-weight: 500;
     line-height: 128.4%;
+    @media only screen and (max-width: 320px) {
+      font-size: 2rem;
+      padding: 8rem 0 0 3rem;
+    }
   }
   &__description {
     padding: 8.8rem 0 0 3.5rem;
     font-size: 1.1rem;
+    @media only screen and (max-width: 320px) {
+      flex: 1;
+      padding: 8rem 0 0 3rem;
+    }
     &--main {
       margin-bottom: 1.5rem;
       font-weight: medium;
       color: #666;
+      @media only screen and (max-width: 320px) {
+        margin-bottom: 1rem;
+      }
     }
     &--second {
       color: #666;
       font-weight: medium;
+      @media only screen and (max-width: 320px) {
+        margin: 0;
+      }
     }
   }
 }

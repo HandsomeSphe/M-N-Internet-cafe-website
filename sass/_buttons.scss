@@ -11,6 +11,12 @@
   padding: 0.2rem;
   cursor: pointer;
   transition: 0.5s ease-in-out;
+  @media only screen and (max-width: 320px) {
+    height: 2.5rem;
+    text-align: center;
+    padding-top: 0.3rem;
+    font-size: 1.1rem;
+  }
 }
 .createCV__button {
   animation: appear 3s ease-in;
@@ -24,7 +30,12 @@
 .printDocument__button:hover {
   height: 5.3vh;
   transform: translateY(-0.4rem);
+  @media only screen and (max-width: 320px) {
+    height: 2rem;
+    transform: translateY(0);
+  }
 }
+
 @keyframes appear {
   0% {
     opacity: 0;
