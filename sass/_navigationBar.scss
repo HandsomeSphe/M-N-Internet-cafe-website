@@ -10,16 +10,9 @@
   overflow: hidden;
   z-index: 4000;
   background-color: white;
-  @media only screen and (max-width: 375px) {
-    width: 45%;
-    height: 4.3vh;
-    background-color: blue;
-  }
-
-  @media only screen and (max-width: 320px) {
-    width: 40%;
-    height: 4vh;
-    background-color: brown;
+  @media only screen and(max-width:320px) {
+    width: 70%;
+    height: 6vh;
   }
 
   &__logo {
@@ -32,6 +25,9 @@
     font-weight: 700;
     font-size: 1.4rem;
     cursor: pointer;
+    @media only screen and (max-width: 320px) {
+      padding: 1.1rem 0 0 3rem;
+    }
   }
   &__list {
     width: 100%;
@@ -45,6 +41,9 @@
     display: flex;
     justify-content: space-between;
     padding: 1rem;
+    @media only screen and (max-width: 320px) {
+      display: none;
+    }
 
     &--item {
       text-decoration: none;
@@ -56,6 +55,7 @@
     }
   }
 }
+
 .active::after {
   content: "";
   display: block;

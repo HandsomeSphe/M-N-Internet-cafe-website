@@ -4,13 +4,6 @@
   display: flex;
   position: relative;
 
-  @media (max-width: 320px) {
-    color: red;
-    background-color: blue;
-    width: 50%;
-    height: 40vh;
-    flex-direction: column;
-  }
   &__text {
     flex: 0 0 50%;
     width: 100%;
@@ -44,6 +37,7 @@
   z-index: 1;
   animation: dropdown 2s ease-in;
 }
+
 .svg {
   // this is a svg in the right bottom corner
   width: 33rem;
@@ -53,6 +47,7 @@
   right: 0;
   z-index: 1;
 }
+
 span {
   color: rgba(120, 7, 7, 0.8);
 }

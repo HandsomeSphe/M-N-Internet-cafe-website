@@ -99,7 +99,7 @@ contactsBtn.addEventListener("click", function () {
         (contactsEmail.value = ""),
         (contactsMssg.value = "");
       contactsName.focus();
-    }, 4000);
+    }, 1000);
   } else {
     alert("Fill in you name, email and your message");
   }
@@ -135,10 +135,11 @@ input.addEventListener("change", (event) => {
     (event.target.files[0].type =
       "application/vnd.openxmlformats-officedocument.presentationml.presentation")
   ) {
-    var fileName = document.querySelector(".Name");
+    var fileName = document.querySelector("#nname");
     fileName.classList.innerHTML = "pptx";
     console.log(`well it is an powerpoint`);
   }
+  fileName.innerHTML = event.target.files[0].name;
   //.innerHTML = event.target.files[0].name;
 });
 
