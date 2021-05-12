@@ -3,10 +3,10 @@
   height: 100vh;
   background: url("/Images/bg.jpg");
   padding-top: 1rem;
-  @media only screen and (max-width: 320px) {
+  @media only screen and (max-width: 30em) {
     width: 100%;
-    height: 100vh;
-    padding-top: 23rem;
+    height: 130vh;
+    padding-top: 33rem;
   }
 
   &__heading {
@@ -14,7 +14,11 @@
     font-weight: 500;
     color: rgba(0, 0, 0, 0.45);
     font-weight: 500;
-    @media only screen and (max-width: 320px) {
+    @media only screen and(max-width:48.25em) {
+      font-size: 1.3rem;
+      align-text: center;
+    }
+    @media only screen and (max-width: 30em) {
       margin: 6rem 0 0 17rem;
       fint-size: 0.9rem;
     }
@@ -25,7 +29,8 @@
     display: flex;
     margin-top: 5rem;
     padding: 0 4rem;
-    @media only screen and (max-width: 320px) {
+
+    @media only screen and (max-width: 30em) {
       flex-direction: column;
       margin-top: 3rem;
     }
@@ -37,7 +42,8 @@
     padding: 1.3rem;
     display: flex;
     flex-direction: column;
-    @media only screen and (max-width: 320px) {
+
+    @media only screen and (max-width: 30em) {
       justify-content: center;
       align-content: center;
     }
@@ -46,6 +52,9 @@
   &__info {
     flex: 1;
     padding: 1.3rem;
+    @media only screen and(max-width:48.25em) {
+      font-size: 1.07rem;
+    }
     &--number,
     &--email {
       display: flex;
@@ -87,6 +96,9 @@
 #fb {
   width: 2rem;
   height: 2rem;
+  @media only screen and(max-width:48.25em) {
+    margin-right: 0.4rem;
+  }
 }
 #number,
 #email {
@@ -102,20 +114,20 @@ input:active {
   border: 1px solid rgba(0, 0, 0, 0.35);
 }
 input {
+  @media only screen and(max-width:48.25em) {
+    amrgin-bottom: 0.8rem;
+  }
   margin-bottom: 0.2rem;
 }
 #ins,
 #twtt,
 #fb {
   margin-right: 0.2rem;
+  @media only screen and(max-width:48.25em) {
+    margin-right: 0.6rem;
+  }
 }
-// #sendIcon {
-//   width: 1.4rem;
-//   height: 1.4rem;
-//   margin-right: 0.2rem;
-//   color: white;
-//   fill: white;
-// }
+
 #message {
   width: 65%;
   height: 30vh;
@@ -128,7 +140,14 @@ input {
   // margin-top: 0.2rem;
   // box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.2), 4px 0px 15px rgba(0, 0, 0, 0.2);
   border-radius: 2px;
-  @media only screen and (max-width: 320px) {
+  @media only screen and(max-width:48.25em) {
+    height: 16vh;
+    font-size: 1.1rem;
+    width: 78%;
+    height: 31vh;
+    margin-top: 0.4rem;
+  }
+  @media only screen and (max-width: 30em) {
     width: 100%;
     height: 15vh;
     font-size: 1.3rem;
@@ -146,7 +165,7 @@ input {
   background: #666;
   padding: 1rem;
   color: white;
-  @media only screen and (max-width: 320px) {
+  @media only screen and (max-width: 30em) {
     width: 100%;
     margin: 0;
   }

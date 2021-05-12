@@ -11,11 +11,11 @@ html {
   font-family: poppins, sans-serif;
   font-weight: 400;
   font-size: 1rem;
-  @media only screen and(max-width:375px) {
+  @media only screen and(max-width:48.25em) {
     font-size: 60%;
     font-weight: 400;
   }
-  @media only screen and(max-width:320px) {
+  @media only screen and(max-width:30em) {
     font-size: 50%;
     font-weight: 300;
   }
