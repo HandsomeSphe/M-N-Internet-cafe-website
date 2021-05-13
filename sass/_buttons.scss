@@ -12,7 +12,7 @@
   cursor: pointer;
   transition: 0.5s ease-in-out;
   @include repsond(s-phone) {
-    height: 2.5rem;
+    height: 2.7rem;
     padding: 0.5rem;
     font-size: 1.05rem;
     font-weight: 400;
@@ -20,11 +20,17 @@
 }
 .createCV__button {
   animation: appear 3s ease-in;
+  @include repsond(s-phone) {
+    margin-bottom: 1rem;
+  }
 }
 .printDocument__button {
   background-color: rgba(120, 7, 7, 0.7);
   margin-left: 1.5rem;
   animation: appear 3.3s ease-in;
+  @include repsond(s-phone) {
+    margin-left: 2rem;
+  }
 }
 .createCV__button:hover,
 .printDocument__button:hover {

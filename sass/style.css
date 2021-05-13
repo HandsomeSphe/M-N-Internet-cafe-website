@@ -58,7 +58,7 @@ html {
 @media only screen and (max-width: 25em) {
   .createCV__button,
   .printDocument__button {
-    height: 2.5rem;
+    height: 2.7rem;
     padding: 0.5rem;
     font-size: 1.05rem;
     font-weight: 400;
@@ -70,11 +70,23 @@ html {
           animation: appear 3s ease-in;
 }
 
+@media only screen and (max-width: 25em) {
+  .createCV__button {
+    margin-bottom: 1rem;
+  }
+}
+
 .printDocument__button {
   background-color: rgba(120, 7, 7, 0.7);
   margin-left: 1.5rem;
   -webkit-animation: appear 3.3s ease-in;
           animation: appear 3.3s ease-in;
+}
+
+@media only screen and (max-width: 25em) {
+  .printDocument__button {
+    margin-left: 2rem;
+  }
 }
 
 .createCV__button:hover,
@@ -824,7 +836,11 @@ input {
 
 @media only screen and (max-width: 25em) {
   .homepage__text--buttons {
-    width: 80%;
+    width: 90%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
