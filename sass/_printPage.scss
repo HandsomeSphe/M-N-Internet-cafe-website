@@ -24,6 +24,12 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      @include repsond(x-phone) {
+        width: 60%;
+        height: 40vh;
+        margin-left: 9rem;
+        padding: 0.5rem;
+      }
     }
   }
 }
@@ -46,6 +52,17 @@
   width: 40%;
   color: #000;
   border: none;
+  @include repsond(x-phone) {
+    width: 100%;
+    font-size: 1rem;
+  }
+}
+.text {
+  @include repsond(x-phone) {
+    width: 100%;
+    padding: 0 4rem;
+    display: flex;
+  }
 }
 .printOut__button {
   margin-left: 22rem;
@@ -61,8 +78,11 @@
 }
 .dropIcon {
   width: 17rem;
-  height: auto; // 15rem;
-  //margin: 2rem 0 7rem 0;
+  height: auto;
+  @include repsond(x-phone) {
+    width: 6rem;
+    margin-bottom: 1rem;
+  }
 }
 .Name {
   width: 30%;

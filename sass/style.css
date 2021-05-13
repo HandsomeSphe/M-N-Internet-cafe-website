@@ -336,9 +336,27 @@ input,
   cursor: pointer;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .navbar__logo {
+    height: 7.5vh;
+    padding-top: 1.2rem;
+    font-size: 1.7rem;
+  }
+}
+
+@media only screen and (max-width: 31.25em) {
+  .navbar__logo {
+    height: 7.2vh;
+    padding-top: 1.1rem;
+    font-size: 1.5rem;
+  }
+}
+
 @media only screen and (max-width: 25em) {
   .navbar__logo {
     height: 7vh;
+    padding-top: 1.2rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -525,8 +543,8 @@ input,
 @media only screen and (max-width: 25em) {
   .card {
     width: 85%;
-    height: 40vh;
-    margin: 0 0 1rem 2.3rem;
+    height: 43vh;
+    margin: 0 0 1rem 1.3rem;
     -webkit-box-shadow: none;
             box-shadow: none;
     border: 1px solid rgba(0, 0, 0, 0.11);
@@ -1395,6 +1413,15 @@ span {
           justify-content: center;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .printOut__printerDetails--document {
+    width: 60%;
+    height: 40vh;
+    margin-left: 9rem;
+    padding: 0.5rem;
+  }
+}
+
 .pages {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1422,6 +1449,23 @@ span {
   border: none;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .file {
+    width: 100%;
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .text {
+    width: 100%;
+    padding: 0 4rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .printOut__button {
   margin-left: 22rem;
   width: 52.6%;
@@ -1438,6 +1482,13 @@ span {
 .dropIcon {
   width: 17rem;
   height: auto;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .dropIcon {
+    width: 6rem;
+    margin-bottom: 1rem;
+  }
 }
 
 .Name {

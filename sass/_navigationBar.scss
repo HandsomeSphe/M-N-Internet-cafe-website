@@ -38,9 +38,20 @@
     font-weight: 700;
     font-size: 1.4rem;
     cursor: pointer;
-
+    @include repsond(x-phone) {
+      height: 7.5vh;
+      padding-top: 1.2rem;
+      font-size: 1.7rem;
+    }
+    @include repsond(m-phone) {
+      height: 7.2vh;
+      padding-top: 1.1rem;
+      font-size: 1.5rem;
+    }
     @include repsond(s-phone) {
       height: 7vh;
+      padding-top: 1.2rem;
+      font-size: 1.2rem;
     }
   }
   &__list {
