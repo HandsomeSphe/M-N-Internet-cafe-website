@@ -522,7 +522,7 @@ input,
 
 @media only screen and (max-width: 25em) {
   #print {
-    margin-left: 10.5rem;
+    margin-left: 40%;
   }
 }
 
@@ -532,7 +532,7 @@ input,
 
 @media only screen and (max-width: 25em) {
   #copy {
-    margin-left: 9rem;
+    margin-left: 35%;
   }
 }
 

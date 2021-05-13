@@ -107,12 +107,12 @@
 #print {
   margin-left: 4.6rem;
   @include repsond(s-phone) {
-    margin-left: 10.5rem;
+    margin-left: 40%;
   }
 }
 #copy {
   margin-left: 3.5rem;
   @include repsond(s-phone) {
-    margin-left: 9rem;
+    margin-left: 35%;
   }
 }
