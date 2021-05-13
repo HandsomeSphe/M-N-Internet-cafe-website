@@ -1,6 +1,10 @@
 .printer {
   width: 100%;
   height: 100vh;
+  @include repsond(x-phone) {
+    width: 100%;
+    height: 90vh;
+  }
 }
 
 .printOut {
@@ -27,7 +31,7 @@
       @include repsond(x-phone) {
         width: 60%;
         height: 40vh;
-        margin-left: 9rem;
+        margin-left: 7rem;
         padding: 0.5rem;
       }
     }
@@ -75,12 +79,16 @@
   padding: 0.4rem;
   text-align: center;
   cursor: pointer;
+  @include repsond(x-phone) {
+    margin-left: 7rem;
+    width: 60%;
+  }
 }
 .dropIcon {
   width: 17rem;
   height: auto;
   @include repsond(x-phone) {
-    width: 6rem;
+    width: 5rem;
     margin-bottom: 1rem;
   }
 }
@@ -96,6 +104,12 @@
   color: rgba(0, 0, 0, 0.45);
   font-weight: 500;
   padding: 3rem;
+  @include repsond(x-phone) {
+    text-align: center;
+    width: 40%;
+    margin: 0 0 2rem 30%;
+    font-size: 1.1rem;
+  }
 }
 .printer__details {
   display: flex;
@@ -105,12 +119,21 @@
   &--surname {
     width: 23%;
     height: 2.2rem;
+    @include repsond(x-phone) {
+      width: 60%;
+    }
   }
   &--name {
     margin: 0 2rem 0 22rem;
+    @include repsond(x-phone) {
+      margin: 0 2rem 0 7rem;
+    }
   }
   &--surname {
     margin: 1.5rem 0 0 22rem;
+    @include repsond(x-phone) {
+      margin: 1.5rem 0 0 7rem;
+    }
   }
 }
 .form {
