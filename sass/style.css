@@ -437,6 +437,9 @@ input,
     width: 85%;
     height: 40vh;
     margin: 0 0 1rem 2.3rem;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: 1px solid rgba(0, 0, 0, 0.11);
   }
 }
 
@@ -836,7 +839,7 @@ input {
 
 @media only screen and (max-width: 25em) {
   .homepage__text--buttons {
-    width: 90%;
+    width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
