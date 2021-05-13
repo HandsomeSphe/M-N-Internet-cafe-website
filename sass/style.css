@@ -636,7 +636,8 @@ input,
 
 @media only screen and (max-width: 25em) {
   .card__icon {
-    width: 6.8rem;
+    width: 7.5rem;
+    height: 14vh;
   }
 }
 
