@@ -23,7 +23,19 @@ html {
 
 @media only screen and (max-width: 25em) {
   html {
-    font-size: 50%;
+    font-size: 42%;
+  }
+}
+
+@media only screen and (max-width: 31.25em) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  html {
+    font-size: 60%;
   }
 }
 
@@ -41,6 +53,16 @@ html {
   cursor: pointer;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
+}
+
+@media only screen and (max-width: 25em) {
+  .createCV__button,
+  .printDocument__button {
+    height: 2.5rem;
+    padding: 0.5rem;
+    font-size: 1.05rem;
+    font-weight: 400;
+  }
 }
 
 .createCV__button {
@@ -97,6 +119,13 @@ input,
   border-radius: 2px;
   font-weight: 500;
   font-family: poppins, sans-serif;
+}
+
+@media only screen and (max-width: 25em) {
+  input,
+  .contact__button {
+    width: 100%;
+  }
 }
 
 .contact__button {
@@ -183,6 +212,13 @@ input,
   height: 2rem;
 }
 
+@media only screen and (max-width: 25em) {
+  #sendBtn {
+    width: 100%;
+    height: 2.5rem;
+  }
+}
+
 .navbar {
   width: 100%;
   height: 8vh;
@@ -201,8 +237,25 @@ input,
   background-color: white;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .navbar {
+    width: 100%;
+    height: 10vh;
+    padding: 0rem;
+  }
+}
+
+@media only screen and (max-width: 31.25em) {
+  .navbar {
+    width: 100%;
+    height: 4.7rem;
+    padding: 0.5rem;
+  }
+}
+
 @media only screen and (max-width: 25em) {
   .navbar {
+    width: 100%;
     height: 4.2rem;
     padding: 0.5rem;
   }
@@ -245,6 +298,20 @@ input,
   padding: 1rem;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .navbar__list {
+    display: none;
+    visibility: none;
+  }
+}
+
+@media only screen and (max-width: 31.25em) {
+  .navbar__list {
+    display: none;
+    visibility: none;
+  }
+}
+
 @media only screen and (max-width: 25em) {
   .navbar__list {
     display: none;
@@ -281,6 +348,13 @@ input,
   padding-top: 7rem;
 }
 
+@media only screen and (max-width: 25em) {
+  .services {
+    height: 140vh;
+    padding-top: 2rem;
+  }
+}
+
 .services__heading {
   margin: 0 30% 0 50%;
   font-weight: 500;
@@ -288,11 +362,46 @@ input,
   font-weight: 500;
 }
 
+@media only screen and (max-width: 25em) {
+  .services__heading {
+    margin: 0;
+    visibility: none;
+    display: none;
+  }
+}
+
 .services__cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 12rem 3rem 0 5rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .services__cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 31.25em) {
+  .services__cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 25em) {
+  .services__cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .card {
@@ -308,11 +417,26 @@ input,
   margin-left: 2.5rem;
 }
 
+@media only screen and (max-width: 25em) {
+  .card {
+    width: 85%;
+    height: 40vh;
+    margin: 0 0 1rem 2.3rem;
+  }
+}
+
 .card__title {
   margin-left: 3.5rem;
   color: black;
   font-weight: 600;
   margin-bottom: 1.4rem;
+}
+
+@media only screen and (max-width: 25em) {
+  .card__title {
+    margin: 0 0 1.1rem 8.5rem;
+    font-size: 1.2rem;
+  }
 }
 
 .card__title:not(:last-child) {
@@ -323,6 +447,12 @@ input,
   color: #666;
   font-size: 0.9rem;
   text-align: center;
+}
+
+@media only screen and (max-width: 25em) {
+  .card__description {
+    font-size: 1rem;
+  }
 }
 
 .card:not(:last-child) {
@@ -338,8 +468,20 @@ input,
   margin-bottom: 1.2rem;
 }
 
+@media only screen and (max-width: 25em) {
+  .card__icon {
+    width: 6.8rem;
+  }
+}
+
 #globe {
   margin-left: 1.8rem;
+}
+
+@media only screen and (max-width: 25em) {
+  #globe {
+    margin: 2rem 0 0 1.9rem;
+  }
 }
 
 .icon {
@@ -349,12 +491,31 @@ input,
   margin: 1.5rem 1.4rem 0 1.7rem;
 }
 
+@media only screen and (max-width: 25em) {
+  .icon {
+    margin-top: 1.8rem;
+    margin-left: 1.9rem;
+  }
+}
+
 #print {
   margin-left: 4.6rem;
 }
 
+@media only screen and (max-width: 25em) {
+  #print {
+    margin-left: 10.5rem;
+  }
+}
+
 #copy {
   margin-left: 3.5rem;
+}
+
+@media only screen and (max-width: 25em) {
+  #copy {
+    margin-left: 9rem;
+  }
 }
 
 .contacts {
@@ -371,12 +532,47 @@ input,
   font-weight: 500;
 }
 
+@media only screen and (max-width: 25em) {
+  .contacts__heading {
+    display: none;
+    visibility: none;
+  }
+}
+
 .contact__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 5rem;
   padding: 0 4rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .contact__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 31.25em) {
+  .contact__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 25em) {
+  .contact__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 10rem;
+  }
 }
 
 .contact__input {
@@ -412,6 +608,12 @@ input,
   color: rgba(0, 0, 0, 0.5);
 }
 
+@media only screen and (max-width: 25em) {
+  .contact__info--number, .contact__info--email {
+    font-size: 1.2rem;
+  }
+}
+
 .contact__info--socialHandles {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -422,6 +624,13 @@ input,
   width: 60%;
   height: 3rem;
   margin-top: 1rem;
+}
+
+@media only screen and (max-width: 25em) {
+  .contact__info--socialHandles {
+    width: 90%;
+    font-size: 1.1rem;
+  }
 }
 
 .twitter,
@@ -493,6 +702,12 @@ input {
   border-radius: 2px;
 }
 
+@media only screen and (max-width: 25em) {
+  #message {
+    width: 100%;
+  }
+}
+
 #message:focus,
 #message:active {
   outline: none;
@@ -517,6 +732,24 @@ input {
   position: relative;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .homepage {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 31.25em) {
+  .homepage {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 25em) {
+  .homepage {
+    width: 100%;
+  }
+}
+
 .homepage__text {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 50%;
@@ -527,6 +760,31 @@ input {
   padding: 18rem 0 0 6rem;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .homepage__text {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 65%;
+            flex: 0 0 65%;
+  }
+}
+
+@media only screen and (max-width: 31.25em) {
+  .homepage__text {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 75%;
+            flex: 0 0 75%;
+  }
+}
+
+@media only screen and (max-width: 25em) {
+  .homepage__text {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 85%;
+            flex: 0 0 85%;
+    padding: 15rem 0 0 5rem;
+  }
+}
+
 .homepage__text--main {
   font-size: 3.5rem;
   font-weight: 500;
@@ -535,12 +793,36 @@ input {
           animation: moveIn 2s ease-in;
 }
 
+@media only screen and (max-width: 25em) {
+  .homepage__text--main {
+    font-size: 2.6rem;
+  }
+}
+
 .homepage__text--buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 68%;
   margin-top: 1.3rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .homepage__text--buttons {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 31.25em) {
+  .homepage__text--buttons {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 25em) {
+  .homepage__text--buttons {
+    width: 80%;
+  }
 }
 
 .homepage__image {
@@ -558,6 +840,27 @@ input {
   z-index: 1;
   -webkit-animation: dropdown 2s ease-in;
           animation: dropdown 2s ease-in;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .img {
+    display: none;
+    visibility: none;
+  }
+}
+
+@media only screen and (max-width: 31.25em) {
+  .img {
+    display: none;
+    visibility: none;
+  }
+}
+
+@media only screen and (max-width: 25em) {
+  .img {
+    display: none;
+    visibility: none;
+  }
 }
 
 .svg {
@@ -633,6 +936,12 @@ span {
   color: rgba(0, 0, 0, 0.45);
 }
 
+@media only screen and (max-width: 25em) {
+  .heading {
+    display: none;
+  }
+}
+
 .about {
   width: 100%;
   height: 100vh;
@@ -642,6 +951,37 @@ span {
   display: flex;
   background-image: url("/Images/bg.jpg");
   position: relative;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .about {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 31.25em) {
+  .about {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 25em) {
+  .about {
+    width: 100%;
+    height: 56vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .about__heading {
@@ -654,9 +994,26 @@ span {
   line-height: 128.4%;
 }
 
+@media only screen and (max-width: 25em) {
+  .about__heading {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+            flex: 0 0 20%;
+    font-size: 1.8rem;
+    padding: 1rem;
+    text-align: center;
+  }
+}
+
 .about__description {
   padding: 8.8rem 0 0 3.5rem;
   font-size: 1.1rem;
+}
+
+@media only screen and (max-width: 25em) {
+  .about__description {
+    padding: 1rem;
+  }
 }
 
 .about__description--main {

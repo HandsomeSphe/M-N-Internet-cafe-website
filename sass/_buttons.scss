@@ -11,6 +11,12 @@
   padding: 0.2rem;
   cursor: pointer;
   transition: 0.5s ease-in-out;
+  @include repsond(s-phone) {
+    height: 2.5rem;
+    padding: 0.5rem;
+    font-size: 1.05rem;
+    font-weight: 400;
+  }
 }
 .createCV__button {
   animation: appear 3s ease-in;
@@ -47,6 +53,9 @@ input,
   border-radius: 2px;
   font-weight: 500;
   font-family: poppins, sans-serif;
+  @include repsond(s-phone) {
+    width: 100%;
+  }
 }
 
 .contact__button {
@@ -111,4 +120,8 @@ input,
   border: none;
   width: 65%;
   height: 2rem;
+  @include repsond(s-phone) {
+    width: 100%;
+    height: 2.5rem;
+  }
 }

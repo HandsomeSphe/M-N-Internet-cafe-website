@@ -52,6 +52,12 @@ html {
   font-weight: 400;
   font-size: 1rem;
   @include repsond(s-phone) {
-    font-size: 50%;
+    font-size: 42%;
+  }
+  @include repsond(m-phone) {
+    font-size: 55%;
+  }
+  @include repsond(x-phone) {
+    font-size: 60%;
   }
 }

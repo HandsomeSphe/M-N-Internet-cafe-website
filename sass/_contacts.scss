@@ -9,6 +9,10 @@
     font-weight: 500;
     color: rgba(0, 0, 0, 0.45);
     font-weight: 500;
+    @include repsond(s-phone) {
+      display: none;
+      visibility: none;
+    }
   }
 }
 .contact {
@@ -16,6 +20,16 @@
     display: flex;
     margin-top: 5rem;
     padding: 0 4rem;
+    @include repsond(x-phone) {
+      flex-direction: column;
+    }
+    @include repsond(m-phone) {
+      flex-direction: column;
+    }
+    @include repsond(s-phone) {
+      flex-direction: column;
+      margin-top: 10rem;
+    }
   }
   &__input {
     width: 100%;
@@ -35,6 +49,9 @@
       display: flex;
       align-items: center;
       color: rgba(0, 0, 0, 0.5);
+      @include repsond(s-phone) {
+        font-size: 1.2rem;
+      }
     }
   }
   &__info--socialHandles {
@@ -43,6 +60,10 @@
     width: 60%;
     height: 3rem;
     margin-top: 1rem;
+    @include repsond(s-phone) {
+      width: 90%;
+      font-size: 1.1rem;
+    }
   }
 }
 .twitter,
@@ -106,6 +127,9 @@ input {
   // margin-top: 0.2rem;
   // box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.2), 4px 0px 15px rgba(0, 0, 0, 0.2);
   border-radius: 2px;
+  @include repsond(s-phone) {
+    width: 100%;
+  }
 }
 #message:focus,
 #message:active {

@@ -10,7 +10,18 @@
   overflow: hidden;
   z-index: 4000;
   background-color: white;
+  @include repsond(x-phone) {
+    width: 100%;
+    height: 10vh;
+    padding: 0rem;
+  }
+  @include repsond(m-phone) {
+    width: 100%;
+    height: 4.7rem;
+    padding: 0.5rem;
+  }
   @include repsond(s-phone) {
+    width: 100%;
     height: 4.2rem;
     padding: 0.5rem;
   }
@@ -25,6 +36,7 @@
     font-weight: 700;
     font-size: 1.4rem;
     cursor: pointer;
+
     @include repsond(s-phone) {
       height: 7vh;
     }
@@ -41,6 +53,14 @@
     display: flex;
     justify-content: space-between;
     padding: 1rem;
+    @include repsond(x-phone) {
+      display: none;
+      visibility: none;
+    }
+    @include repsond(m-phone) {
+      display: none;
+      visibility: none;
+    }
     @include repsond(s-phone) {
       display: none;
       visibility: none;
