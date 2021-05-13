@@ -21,16 +21,22 @@ html {
   font-size: 1rem;
 }
 
-@media only screen and (max-width: 37.5em) {
-  font-size: 60%;
+@media only screen and (max-width: 25em) {
+  html {
+    font-size: 22%;
+  }
 }
 
 @media only screen and (max-width: 31.25em) {
-  font-size: 55%;
+  html {
+    font-size: 55%;
+  }
 }
 
-@media only screen and (max-width: 25em) {
-  font-size: 42%;
+@media only screen and (max-width: 37.5em) {
+  html {
+    font-size: 60%;
+  }
 }
 
 .createCV__button,
@@ -254,7 +260,7 @@ input,
     padding: 0.5rem;
     -webkit-box-shadow: none;
             box-shadow: none;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
   }
 }
 

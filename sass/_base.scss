@@ -51,13 +51,13 @@ html {
   font-family: poppins, sans-serif;
   font-weight: 400;
   font-size: 1rem;
-}
-@include repsond(x-phone) {
-  font-size: 60%;
-}
-@include repsond(m-phone) {
-  font-size: 55%;
-}
-@include repsond(s-phone) {
-  font-size: 42%;
+  @include repsond(s-phone) {
+    font-size: 22%;
+  }
+  @include repsond(m-phone) {
+    font-size: 55%;
+  }
+  @include repsond(x-phone) {
+    font-size: 60%;
+  }
 }
