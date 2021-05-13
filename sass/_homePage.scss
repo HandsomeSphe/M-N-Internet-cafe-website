@@ -20,10 +20,10 @@
     color: #666;
     padding: 18rem 0 0 6rem;
     @include repsond(x-phone) {
-      flex: 0 0 65%;
+      flex: 0 0 75%;
     }
     @include repsond(m-phone) {
-      flex: 0 0 75%;
+      flex: 0 0 85%;
     }
     @include repsond(s-phone) {
       flex: 0 0 85%;
@@ -125,6 +125,9 @@ span {
   left: 50%;
   font-weight: 500;
   color: rgba(0, 0, 0, 0.45);
+  @include repsond(m-phone) {
+    display: none;
+  }
   @include repsond(s-phone) {
     display: none;
   }
@@ -145,6 +148,7 @@ span {
   @include repsond(m-phone) {
     width: 100%;
     flex-direction: column;
+    height: 60vh;
   }
   @include repsond(s-phone) {
     width: 100%;
@@ -158,6 +162,13 @@ span {
     padding: 8.8rem 15rem 0 2rem;
     font-weight: 500;
     line-height: 128.4%;
+    @include repsond(m-phone) {
+      flex: 0 0 20%;
+      font-size: 2.2rem;
+      padding: 1rem;
+      text-align: center;
+      margin-bottom: 1.1rem;
+    }
     @include repsond(s-phone) {
       flex: 0 0 20%;
       font-size: 1.8rem;
@@ -168,6 +179,11 @@ span {
   &__description {
     padding: 8.8rem 0 0 3.5rem;
     font-size: 1.1rem;
+    @include repsond(m-phone) {
+      padding: 1rem;
+      margin-left: 1rem;
+      font-size: 1.2rem;
+    }
     @include repsond(s-phone) {
       padding: 1rem;
     }

@@ -9,6 +9,9 @@
     font-weight: 500;
     color: rgba(0, 0, 0, 0.45);
     font-weight: 500;
+    @include repsond(m-phone) {
+      display: none;
+    }
     @include repsond(s-phone) {
       display: none;
       visibility: none;
@@ -49,6 +52,9 @@
       display: flex;
       align-items: center;
       color: rgba(0, 0, 0, 0.5);
+      @include repsond(m-phone) {
+        font-size: 1.3rem;
+      }
       @include repsond(s-phone) {
         font-size: 1.2rem;
       }
@@ -60,6 +66,10 @@
     width: 60%;
     height: 3rem;
     margin-top: 1rem;
+    @include repsond(m-phone) {
+      width: 90%;
+      font-size: 1.2rem;
+    }
     @include repsond(s-phone) {
       width: 90%;
       font-size: 1.1rem;
@@ -127,6 +137,9 @@ input {
   // margin-top: 0.2rem;
   // box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.2), 4px 0px 15px rgba(0, 0, 0, 0.2);
   border-radius: 2px;
+  @include repsond(m-phone) {
+    width: 100%;
+  }
   @include repsond(s-phone) {
     width: 100%;
   }

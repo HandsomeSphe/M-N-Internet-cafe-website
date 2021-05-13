@@ -55,6 +55,15 @@ html {
   transition: 0.5s ease-in-out;
 }
 
+@media only screen and (max-width: 31.25em) {
+  .createCV__button,
+  .printDocument__button {
+    height: 2.7rem;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+  }
+}
+
 @media only screen and (max-width: 25em) {
   .createCV__button,
   .printDocument__button {
@@ -131,6 +140,13 @@ input,
   border-radius: 2px;
   font-weight: 500;
   font-family: poppins, sans-serif;
+}
+
+@media only screen and (max-width: 31.25em) {
+  input,
+  .contact__button {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 25em) {
@@ -222,6 +238,13 @@ input,
   border: none;
   width: 65%;
   height: 2rem;
+}
+
+@media only screen and (max-width: 31.25em) {
+  #sendBtn {
+    width: 100%;
+    height: 3rem;
+  }
 }
 
 @media only screen and (max-width: 25em) {
@@ -363,6 +386,13 @@ input,
   padding-top: 7rem;
 }
 
+@media only screen and (max-width: 31.25em) {
+  .services {
+    height: 165vh;
+    padding-top: 2rem;
+  }
+}
+
 @media only screen and (max-width: 25em) {
   .services {
     height: 140vh;
@@ -375,6 +405,13 @@ input,
   font-weight: 500;
   color: rgba(0, 0, 0, 0.45);
   font-weight: 500;
+}
+
+@media only screen and (max-width: 31.25em) {
+  .services__heading {
+    display: none;
+    margin: 0;
+  }
 }
 
 @media only screen and (max-width: 25em) {
@@ -432,6 +469,14 @@ input,
   margin-left: 2.5rem;
 }
 
+@media only screen and (max-width: 31.25em) {
+  .card {
+    width: 76%;
+    height: 45vh;
+    margin: 0 0 1rem 4rem;
+  }
+}
+
 @media only screen and (max-width: 25em) {
   .card {
     width: 85%;
@@ -450,6 +495,13 @@ input,
   margin-bottom: 1.4rem;
 }
 
+@media only screen and (max-width: 31.25em) {
+  .card__title {
+    font-size: 1.5rem;
+    margin: 0 0 1.1rem 9.3rem;
+  }
+}
+
 @media only screen and (max-width: 25em) {
   .card__title {
     margin: 0 0 1.1rem 8.5rem;
@@ -465,6 +517,12 @@ input,
   color: #666;
   font-size: 0.9rem;
   text-align: center;
+}
+
+@media only screen and (max-width: 31.25em) {
+  .card__description {
+    font-size: 1.1rem;
+  }
 }
 
 @media only screen and (max-width: 25em) {
@@ -486,6 +544,12 @@ input,
   margin-bottom: 1.2rem;
 }
 
+@media only screen and (max-width: 31.25em) {
+  .card__icon {
+    width: 7rem;
+  }
+}
+
 @media only screen and (max-width: 25em) {
   .card__icon {
     width: 6.8rem;
@@ -494,6 +558,12 @@ input,
 
 #globe {
   margin-left: 1.8rem;
+}
+
+@media only screen and (max-width: 31.25em) {
+  #globe {
+    margin: 2rem 0 0 2rem;
+  }
 }
 
 @media only screen and (max-width: 25em) {
@@ -509,6 +579,13 @@ input,
   margin: 1.5rem 1.4rem 0 1.7rem;
 }
 
+@media only screen and (max-width: 31.25em) {
+  .icon {
+    margin-top: 2rem;
+    margin-left: 2.1rem;
+  }
+}
+
 @media only screen and (max-width: 25em) {
   .icon {
     margin-top: 1.8rem;
@@ -520,6 +597,12 @@ input,
   margin-left: 4.6rem;
 }
 
+@media only screen and (max-width: 31.25em) {
+  #print {
+    margin-left: 40%;
+  }
+}
+
 @media only screen and (max-width: 25em) {
   #print {
     margin-left: 40%;
@@ -528,6 +611,12 @@ input,
 
 #copy {
   margin-left: 3.5rem;
+}
+
+@media only screen and (max-width: 31.25em) {
+  #copy {
+    margin-left: 35%;
+  }
 }
 
 @media only screen and (max-width: 25em) {
@@ -548,6 +637,12 @@ input,
   font-weight: 500;
   color: rgba(0, 0, 0, 0.45);
   font-weight: 500;
+}
+
+@media only screen and (max-width: 31.25em) {
+  .contacts__heading {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 25em) {
@@ -626,6 +721,12 @@ input,
   color: rgba(0, 0, 0, 0.5);
 }
 
+@media only screen and (max-width: 31.25em) {
+  .contact__info--number, .contact__info--email {
+    font-size: 1.3rem;
+  }
+}
+
 @media only screen and (max-width: 25em) {
   .contact__info--number, .contact__info--email {
     font-size: 1.2rem;
@@ -642,6 +743,13 @@ input,
   width: 60%;
   height: 3rem;
   margin-top: 1rem;
+}
+
+@media only screen and (max-width: 31.25em) {
+  .contact__info--socialHandles {
+    width: 90%;
+    font-size: 1.2rem;
+  }
 }
 
 @media only screen and (max-width: 25em) {
@@ -720,6 +828,12 @@ input {
   border-radius: 2px;
 }
 
+@media only screen and (max-width: 31.25em) {
+  #message {
+    width: 100%;
+  }
+}
+
 @media only screen and (max-width: 25em) {
   #message {
     width: 100%;
@@ -781,16 +895,16 @@ input {
 @media only screen and (max-width: 37.5em) {
   .homepage__text {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 65%;
-            flex: 0 0 65%;
+        -ms-flex: 0 0 75%;
+            flex: 0 0 75%;
   }
 }
 
 @media only screen and (max-width: 31.25em) {
   .homepage__text {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 75%;
-            flex: 0 0 75%;
+        -ms-flex: 0 0 85%;
+            flex: 0 0 85%;
   }
 }
 
@@ -958,6 +1072,12 @@ span {
   color: rgba(0, 0, 0, 0.45);
 }
 
+@media only screen and (max-width: 31.25em) {
+  .heading {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 25em) {
   .heading {
     display: none;
@@ -992,6 +1112,7 @@ span {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    height: 60vh;
   }
 }
 
@@ -1016,6 +1137,18 @@ span {
   line-height: 128.4%;
 }
 
+@media only screen and (max-width: 31.25em) {
+  .about__heading {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+            flex: 0 0 20%;
+    font-size: 2.2rem;
+    padding: 1rem;
+    text-align: center;
+    margin-bottom: 1.1rem;
+  }
+}
+
 @media only screen and (max-width: 25em) {
   .about__heading {
     -webkit-box-flex: 0;
@@ -1030,6 +1163,14 @@ span {
 .about__description {
   padding: 8.8rem 0 0 3.5rem;
   font-size: 1.1rem;
+}
+
+@media only screen and (max-width: 31.25em) {
+  .about__description {
+    padding: 1rem;
+    margin-left: 1rem;
+    font-size: 1.2rem;
+  }
 }
 
 @media only screen and (max-width: 25em) {
