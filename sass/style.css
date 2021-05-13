@@ -55,6 +55,15 @@ html {
   transition: 0.5s ease-in-out;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .createCV__button,
+  .printDocument__button {
+    height: 2.9rem;
+    padding: 0.5rem;
+    font-size: 1.4rem;
+  }
+}
+
 @media only screen and (max-width: 31.25em) {
   .createCV__button,
   .printDocument__button {
@@ -140,6 +149,13 @@ input,
   border-radius: 2px;
   font-weight: 500;
   font-family: poppins, sans-serif;
+}
+
+@media only screen and (max-width: 37.5em) {
+  input,
+  .contact__button {
+    width: 90%;
+  }
 }
 
 @media only screen and (max-width: 31.25em) {
@@ -238,6 +254,13 @@ input,
   border: none;
   width: 65%;
   height: 2rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  #sendBtn {
+    width: 90%;
+    height: 3rem;
+  }
 }
 
 @media only screen and (max-width: 31.25em) {
@@ -386,6 +409,13 @@ input,
   padding-top: 7rem;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .services {
+    height: 170vh;
+    padding-top: 2rem;
+  }
+}
+
 @media only screen and (max-width: 31.25em) {
   .services {
     height: 165vh;
@@ -405,6 +435,13 @@ input,
   font-weight: 500;
   color: rgba(0, 0, 0, 0.45);
   font-weight: 500;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .services__heading {
+    margin: 0;
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 31.25em) {
@@ -469,6 +506,14 @@ input,
   margin-left: 2.5rem;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .card {
+    width: 78%;
+    height: 55vh;
+    margin: 0 0 1rem 5rem;
+  }
+}
+
 @media only screen and (max-width: 31.25em) {
   .card {
     width: 76%;
@@ -495,6 +540,13 @@ input,
   margin-bottom: 1.4rem;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .card__title {
+    font-size: 1.7rem;
+    margin: 0 0 1.1rem 14rem;
+  }
+}
+
 @media only screen and (max-width: 31.25em) {
   .card__title {
     font-size: 1.5rem;
@@ -517,6 +569,12 @@ input,
   color: #666;
   font-size: 0.9rem;
   text-align: center;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .card__description {
+    font-size: 1.3rem;
+  }
 }
 
 @media only screen and (max-width: 31.25em) {
@@ -544,9 +602,17 @@ input,
   margin-bottom: 1.2rem;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .card__icon {
+    width: 9rem;
+    height: 18vh;
+  }
+}
+
 @media only screen and (max-width: 31.25em) {
   .card__icon {
     width: 7rem;
+    height: 14vh;
   }
 }
 
@@ -558,6 +624,12 @@ input,
 
 #globe {
   margin-left: 1.8rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  #globe {
+    margin: 2.2rem 0 0 2.5rem;
+  }
 }
 
 @media only screen and (max-width: 31.25em) {
@@ -579,8 +651,19 @@ input,
   margin: 1.5rem 1.4rem 0 1.7rem;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .icon {
+    width: 4rem;
+    height: 4rem;
+    margin-top: 2.4rem;
+    margin-left: 2.4rem;
+  }
+}
+
 @media only screen and (max-width: 31.25em) {
   .icon {
+    width: 3rem;
+    height: 3rem;
     margin-top: 2rem;
     margin-left: 2.1rem;
   }
@@ -597,6 +680,12 @@ input,
   margin-left: 4.6rem;
 }
 
+@media only screen and (max-width: 37.5em) {
+  #print {
+    margin-left: 41%;
+  }
+}
+
 @media only screen and (max-width: 31.25em) {
   #print {
     margin-left: 40%;
@@ -611,6 +700,12 @@ input,
 
 #copy {
   margin-left: 3.5rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  #copy {
+    margin-left: 37%;
+  }
 }
 
 @media only screen and (max-width: 31.25em) {
@@ -632,11 +727,23 @@ input,
   padding-top: 1rem;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .contacts {
+    height: 110vh;
+  }
+}
+
 .contacts__heading {
   margin: 0 30% 0 50%;
   font-weight: 500;
   color: rgba(0, 0, 0, 0.45);
   font-weight: 500;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .contacts__heading {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 31.25em) {
@@ -666,6 +773,8 @@ input,
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-top: 15rem;
+    margin-left: 4rem;
   }
 }
 
@@ -675,6 +784,7 @@ input,
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-left: 1rem;
   }
 }
 
@@ -685,6 +795,7 @@ input,
         -ms-flex-direction: column;
             flex-direction: column;
     margin-top: 10rem;
+    margin-left: 1rem;
   }
 }
 
@@ -719,6 +830,12 @@ input,
       -ms-flex-align: center;
           align-items: center;
   color: rgba(0, 0, 0, 0.5);
+}
+
+@media only screen and (max-width: 37.5em) {
+  .contact__info--number, .contact__info--email {
+    font-size: 1.4rem;
+  }
 }
 
 @media only screen and (max-width: 31.25em) {
@@ -828,6 +945,12 @@ input {
   border-radius: 2px;
 }
 
+@media only screen and (max-width: 37.5em) {
+  #message {
+    width: 90%;
+  }
+}
+
 @media only screen and (max-width: 31.25em) {
   #message {
     width: 100%;
@@ -897,6 +1020,7 @@ input {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 75%;
             flex: 0 0 75%;
+    font-size: 1.1rem;
   }
 }
 
@@ -905,6 +1029,7 @@ input {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 85%;
             flex: 0 0 85%;
+    font-size: 1.05rem;
   }
 }
 
@@ -914,6 +1039,7 @@ input {
         -ms-flex: 0 0 85%;
             flex: 0 0 85%;
     padding: 15rem 0 0 5rem;
+    font-size: 0.9rem;
   }
 }
 
@@ -923,6 +1049,18 @@ input {
   color: #000;
   -webkit-animation: moveIn 2s ease-in;
           animation: moveIn 2s ease-in;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .homepage__text--main {
+    font-size: 3.5rem;
+  }
+}
+
+@media only screen and (max-width: 31.25em) {
+  .homepage__text--main {
+    font-size: 2.8rem;
+  }
 }
 
 @media only screen and (max-width: 25em) {
@@ -1072,6 +1210,12 @@ span {
   color: rgba(0, 0, 0, 0.45);
 }
 
+@media only screen and (max-width: 37.5em) {
+  .heading {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 31.25em) {
   .heading {
     display: none;
@@ -1098,6 +1242,7 @@ span {
 @media only screen and (max-width: 37.5em) {
   .about {
     width: 100%;
+    height: 65vh;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1119,7 +1264,7 @@ span {
 @media only screen and (max-width: 25em) {
   .about {
     width: 100%;
-    height: 56vh;
+    height: 73vh;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1135,6 +1280,18 @@ span {
   padding: 8.8rem 15rem 0 2rem;
   font-weight: 500;
   line-height: 128.4%;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .about__heading {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+            flex: 0 0 20%;
+    font-size: 2.5rem;
+    padding: 1rem;
+    text-align: center;
+    margin-bottom: 1.1rem;
+  }
 }
 
 @media only screen and (max-width: 31.25em) {
@@ -1163,6 +1320,14 @@ span {
 .about__description {
   padding: 8.8rem 0 0 3.5rem;
   font-size: 1.1rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .about__description {
+    padding: 1rem;
+    margin-left: 3rem;
+    font-size: 1.3rem;
+  }
 }
 
 @media only screen and (max-width: 31.25em) {

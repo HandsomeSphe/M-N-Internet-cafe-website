@@ -3,12 +3,19 @@
   height: 100vh;
   background: url("/Images/bg.jpg");
   padding-top: 1rem;
+  @include repsond(x-phone) {
+    height: 110vh;
+  }
 
   &__heading {
     margin: 0 30% 0 50%;
     font-weight: 500;
     color: rgba(0, 0, 0, 0.45);
     font-weight: 500;
+    @include repsond(x-phone) {
+      display: none;
+    }
+
     @include repsond(m-phone) {
       display: none;
     }
@@ -25,13 +32,17 @@
     padding: 0 4rem;
     @include repsond(x-phone) {
       flex-direction: column;
+      margin-top: 15rem;
+      margin-left: 4rem;
     }
     @include repsond(m-phone) {
       flex-direction: column;
+      margin-left: 1rem;
     }
     @include repsond(s-phone) {
       flex-direction: column;
       margin-top: 10rem;
+      margin-left: 1rem;
     }
   }
   &__input {
@@ -52,6 +63,9 @@
       display: flex;
       align-items: center;
       color: rgba(0, 0, 0, 0.5);
+      @include repsond(x-phone) {
+        font-size: 1.4rem;
+      }
       @include repsond(m-phone) {
         font-size: 1.3rem;
       }
@@ -137,6 +151,9 @@ input {
   // margin-top: 0.2rem;
   // box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.2), 4px 0px 15px rgba(0, 0, 0, 0.2);
   border-radius: 2px;
+  @include repsond(x-phone) {
+    width: 90%;
+  }
   @include repsond(m-phone) {
     width: 100%;
   }

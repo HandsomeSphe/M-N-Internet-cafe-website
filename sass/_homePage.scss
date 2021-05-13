@@ -21,13 +21,16 @@
     padding: 18rem 0 0 6rem;
     @include repsond(x-phone) {
       flex: 0 0 75%;
+      font-size: 1.1rem;
     }
     @include repsond(m-phone) {
       flex: 0 0 85%;
+      font-size: 1.05rem;
     }
     @include repsond(s-phone) {
       flex: 0 0 85%;
       padding: 15rem 0 0 5rem;
+      font-size: 0.9rem;
     }
 
     &--main {
@@ -35,6 +38,12 @@
       font-weight: 500;
       color: #000;
       animation: moveIn 2s ease-in;
+      @include repsond(x-phone) {
+        font-size: 3.5rem;
+      }
+      @include repsond(m-phone) {
+        font-size: 2.8rem;
+      }
       @include repsond(s-phone) {
         font-size: 2.6rem;
       }
@@ -125,6 +134,9 @@ span {
   left: 50%;
   font-weight: 500;
   color: rgba(0, 0, 0, 0.45);
+  @include repsond(x-phone) {
+    display: none;
+  }
   @include repsond(m-phone) {
     display: none;
   }
@@ -143,6 +155,7 @@ span {
   position: relative;
   @include repsond(x-phone) {
     width: 100%;
+    height: 65vh;
     flex-direction: column;
   }
   @include repsond(m-phone) {
@@ -152,7 +165,7 @@ span {
   }
   @include repsond(s-phone) {
     width: 100%;
-    height: 56vh;
+    height: 73vh;
     flex-direction: column;
   }
 
@@ -162,6 +175,13 @@ span {
     padding: 8.8rem 15rem 0 2rem;
     font-weight: 500;
     line-height: 128.4%;
+    @include repsond(x-phone) {
+      flex: 0 0 20%;
+      font-size: 2.5rem;
+      padding: 1rem;
+      text-align: center;
+      margin-bottom: 1.1rem;
+    }
     @include repsond(m-phone) {
       flex: 0 0 20%;
       font-size: 2.2rem;
@@ -179,6 +199,11 @@ span {
   &__description {
     padding: 8.8rem 0 0 3.5rem;
     font-size: 1.1rem;
+    @include repsond(x-phone) {
+      padding: 1rem;
+      margin-left: 3rem;
+      font-size: 1.3rem;
+    }
     @include repsond(m-phone) {
       padding: 1rem;
       margin-left: 1rem;
