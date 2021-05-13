@@ -10,6 +10,10 @@
   overflow: hidden;
   z-index: 4000;
   background-color: white;
+  @include repsond(s-phone) {
+    height: 4.2rem;
+    padding: 0.5rem;
+  }
 
   &__logo {
     width: 100%;
@@ -21,6 +25,9 @@
     font-weight: 700;
     font-size: 1.4rem;
     cursor: pointer;
+    @include repsond(s-phone) {
+      height: 7vh;
+    }
   }
   &__list {
     width: 100%;
@@ -34,6 +41,10 @@
     display: flex;
     justify-content: space-between;
     padding: 1rem;
+    @include repsond(s-phone) {
+      display: none;
+      visibility: none;
+    }
 
     &--item {
       text-decoration: none;

@@ -1,3 +1,9 @@
+/*
+-phone
+-tab-portrait
+-tab-landscape
+-desktop
+*/
 *,
 *::before,
 *::after {
@@ -13,6 +19,12 @@ html {
   font-family: poppins, sans-serif;
   font-weight: 400;
   font-size: 1rem;
+}
+
+@media only screen and (max-width: 25em) {
+  html {
+    font-size: 50%;
+  }
 }
 
 .createCV__button,
@@ -168,7 +180,7 @@ input,
   background-color: #780707;
   border: none;
   width: 65%;
-  height: 4rem;
+  height: 2rem;
 }
 
 .navbar {
@@ -189,6 +201,13 @@ input,
   background-color: white;
 }
 
+@media only screen and (max-width: 25em) {
+  .navbar {
+    height: 4.2rem;
+    padding: 0.5rem;
+  }
+}
+
 .navbar__logo {
   width: 100%;
   -webkit-box-flex: 0;
@@ -201,6 +220,12 @@ input,
   font-weight: 700;
   font-size: 1.4rem;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 25em) {
+  .navbar__logo {
+    height: 7vh;
+  }
 }
 
 .navbar__list {
@@ -218,6 +243,13 @@ input,
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 1rem;
+}
+
+@media only screen and (max-width: 25em) {
+  .navbar__list {
+    display: none;
+    visibility: none;
+  }
 }
 
 .navbar__list--item {
