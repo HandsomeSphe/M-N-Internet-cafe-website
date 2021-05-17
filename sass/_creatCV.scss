@@ -14,8 +14,9 @@
   @include repsond(s-phone) {
     width: 100%;
     height: 100vh;
-    padding: 7rem 1rem;
-    align-items: center;
+    padding: 7rem 0 0 0;
+
+    //align-items: center;
   }
 }
 .progressBar {
@@ -25,9 +26,8 @@
   height: 3rem;
   margin: 0 0 5rem 17rem;
   @include repsond(s-phone) {
-    margin: 0 0 4rem 3rem;
-    width: 100%;
-    background-color: pink;
+    margin: 0 0 3rem 1rem;
+    width: 85%;
   }
   &__education,
   &__work,
@@ -35,6 +35,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    @include repsond(s-phone) {
+      align-items: center;
+    }
   }
 }
 .personal,
@@ -59,7 +62,8 @@
   background-color: #666;
   margin: 0.3rem 0 0 0.9rem;
   @include repsond(s-phone) {
-    width: 3rem;
+    width: 13rem;
+    margin: 0.6rem 0 0 1.3rem;
   }
 }
 .education::after {
@@ -70,7 +74,8 @@
   background-color: #666;
   margin: 0.3rem 0 0 0.9rem;
   @include repsond(s-phone) {
-    width: 3rem;
+    width: 9.8rem;
+    margin: 0.6rem 0 0 1.3rem;
   }
 }
 //personal details page
@@ -87,6 +92,10 @@
   align-items: flex-start;
   background-color: white;
   margin-left: 9rem;
+  @include repsond(s-phone) {
+    flex-direction: column;
+    margin-left: 3rem;
+  }
 }
 .createPersonal,
 .createSchool {
