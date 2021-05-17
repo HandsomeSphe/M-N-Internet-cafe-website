@@ -106,10 +106,13 @@ contactsBtn.addEventListener("click", function () {
 });
 // the test for auto submition
 var doneBtn = document.querySelector(".doneBtn");
-var test = document.querySelector("#test");
-const skills = document.querySelector(".mySkills");
+var test = document.querySelector("#testa");
+const skills = document.querySelector(".mySkills").value;
+const information = document.querySelector(".CVrecepientSurname");
 doneBtn.addEventListener("click", function () {
-  autoSubmission();
+  information.innerHTML = skills;
+  console.log(`${skills.value}, ${information}`);
+  //autoSubmission();
 });
 function autoSubmission() {
   document.test.submit();
