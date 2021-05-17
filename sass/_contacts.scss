@@ -149,6 +149,18 @@ input {
 #twtt,
 #fb {
   margin-right: 0.2rem;
+  @include repsond(x-phone) {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  @include repsond(m-phone) {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  @include repsond(s-phone) {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
 }
 
 #message {
