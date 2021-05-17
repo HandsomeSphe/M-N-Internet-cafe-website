@@ -11,6 +11,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  @include repsond(s-phone) {
+    width: 100%;
+    height: 100vh;
+    padding: 7rem 1rem;
+    align-items: center;
+  }
 }
 .progressBar {
   display: flex;
@@ -18,6 +24,11 @@
   width: 60%;
   height: 3rem;
   margin: 0 0 5rem 17rem;
+  @include repsond(s-phone) {
+    margin: 0 0 4rem 3rem;
+    width: 100%;
+    background-color: pink;
+  }
   &__education,
   &__work,
   &__personal {
@@ -35,6 +46,10 @@
   border-radius: 50px;
   color: #666;
   background-color: white;
+  @include repsond(s-phone) {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
 }
 .personal::after {
   content: "";
@@ -43,6 +58,9 @@
   height: 0.1rem;
   background-color: #666;
   margin: 0.3rem 0 0 0.9rem;
+  @include repsond(s-phone) {
+    width: 3rem;
+  }
 }
 .education::after {
   content: "";
@@ -51,6 +69,9 @@
   height: 0.1rem;
   background-color: #666;
   margin: 0.3rem 0 0 0.9rem;
+  @include repsond(s-phone) {
+    width: 3rem;
+  }
 }
 //personal details page
 .createCV {

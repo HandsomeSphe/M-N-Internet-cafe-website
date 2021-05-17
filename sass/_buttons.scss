@@ -111,6 +111,12 @@ input,
     padding: 0.6rem 0;
     cursor: pointer;
     margin-left: 32rem;
+    @include repsond(s-phone) {
+      width: 30%;
+      height: 3rem;
+      margin-left: 35%;
+      font-size: 1rem;
+    }
   }
 }
 .cancel {
