@@ -98,6 +98,18 @@
   margin-right: 2rem;
   color: rgba(0, 0, 0, 0.5);
   cursor: pointer;
+  @include repsond(x-phone) {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  @include repsond(m-phone) {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  @include repsond(s-phone) {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
 }
 .twitter:hover,
 .Instagram:hover,
