@@ -4,6 +4,10 @@
   background-image: url("/Images/bg.jpg");
   position: relative;
   padding-top: 7rem;
+  @include repsond(tab-port) {
+    height: 175vh;
+    padding-top: 3rem;
+  }
   @include repsond(x-phone) {
     height: 170vh;
     padding-top: 2rem;
@@ -22,6 +26,9 @@
     font-weight: 500;
     color: rgba(0, 0, 0, 0.45);
     font-weight: 500;
+    @include repsond(tab-port) {
+      display: none;
+    }
     @include repsond(x-phone) {
       margin: 0;
       display: none;
@@ -39,6 +46,9 @@
   &__cards {
     display: flex;
     margin: 12rem 3rem 0 5rem;
+    @include repsond(tab-port) {
+      flex-direction: column;
+    }
     @include repsond(x-phone) {
       flex-direction: column;
     }
@@ -60,6 +70,11 @@
   padding: 1rem;
   padding-top: 2.6rem;
   margin-left: 2.5rem;
+  @include repsond(tab-port) {
+    width: 70%;
+    height: 50vh;
+    margin: 0 0 1rem 5rem;
+  }
   @include repsond(x-phone) {
     width: 78%;
     height: 55vh;

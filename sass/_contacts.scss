@@ -30,6 +30,9 @@
     display: flex;
     margin-top: 5rem;
     padding: 0 4rem;
+    @include repsond(tab-port) {
+      flex-direction: column;
+    }
     @include repsond(x-phone) {
       flex-direction: column;
       margin-top: 15rem;

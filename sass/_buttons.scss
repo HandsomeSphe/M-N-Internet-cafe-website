@@ -11,6 +11,12 @@
   padding: 0.2rem;
   cursor: pointer;
   transition: 0.5s ease-in-out;
+  @include repsond(tab-port) {
+    height: 3rem;
+    padding: 0.5rem;
+    font-size: 1.3rem;
+    width: 55%;
+  }
   @include repsond(x-phone) {
     height: 2.9rem;
     padding: 0.5rem;

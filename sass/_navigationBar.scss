@@ -10,6 +10,11 @@
   overflow: hidden;
   z-index: 4000;
   background-color: white;
+  @include repsond(tab-port) {
+    width: 100%;
+    height: 10vh;
+    padding: 0 1rem;
+  }
   @include repsond(x-phone) {
     width: 100%;
     height: 10vh;
@@ -38,6 +43,11 @@
     font-weight: 700;
     font-size: 1.4rem;
     cursor: pointer;
+    @include repsond(tab-port) {
+      height: 7.8vh;
+      padding: 1.1rem;
+      font-size: 1.3rem;
+    }
     @include repsond(x-phone) {
       height: 7.5vh;
       padding-top: 1.2rem;
@@ -66,6 +76,10 @@
     display: flex;
     justify-content: space-between;
     padding: 1rem;
+    @include repsond(tab-port) {
+      padding: 1.8rem 1rem;
+      font-size: 1.1rem;
+    }
     @include repsond(x-phone) {
       display: none;
       visibility: none;
