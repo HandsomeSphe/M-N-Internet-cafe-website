@@ -100,8 +100,6 @@ contactsBtn.addEventListener("click", function () {
         (contactsMssg.value = "");
       contactsName.focus();
     }, 1000);
-  } else {
-    alert("Fill in you name, email and your message");
   }
 });
 // the test for auto submition

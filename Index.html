@@ -123,6 +123,7 @@
                 class="name"
                 name="firstName"
                 placeholder="name"
+                required
               />
             </label>
           </div>
@@ -133,6 +134,7 @@
                 class="email"
                 name="email"
                 placeholder="email"
+                required
               />
             </label>
           </div>
@@ -142,6 +144,7 @@
             cols="30"
             rows="20"
             placeholder="Message"
+            required
           ></textarea>
           <button type="submit" class="send" id="sendBtn">send</button>
         </form>
@@ -221,9 +224,11 @@
           />
 
           <div class="text">
-            <span class="upload"
-              ><input type="file" name="file" class="file" multiple
-            /></span>
+            <label for="file">
+              <span class="upload"
+                ><input type="file" name="file" class="file" multiple
+              /></span>
+            </label>
           </div>
         </div>
 
