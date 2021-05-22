@@ -11,6 +11,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  @include repsond(m-phone) {
+    display: none;
+  }
   @include repsond(s-phone) {
     display: none;
   }
@@ -21,6 +24,9 @@
   width: 60%;
   height: 3rem;
   margin: 0 0 5rem 17rem;
+  @include repsond(m-phone) {
+    display: none;
+  }
   @include repsond(s-phone) {
     display: none;
   }
@@ -72,6 +78,10 @@
   align-items: flex-start;
   background-color: white;
   margin-left: 9rem;
+  @include repsond(m-phone) {
+    display: flex;
+    flex-direction: column;
+  }
   @include repsond(s-phone) {
     display: flex;
     flex-direction: column;
@@ -116,6 +126,9 @@
 }
 .date {
   width: 33%;
+  @include repsond(m-phone) {
+    width: 68%;
+  }
   @include repsond(s-phone) {
     width: 65%;
   }
@@ -150,6 +163,9 @@
   height: 8rem;
   resize: none;
   border: 0.8px solid rgba(0, 0, 0, 0.15);
+  @include repsond(m-phone) {
+    height: 6rem;
+  }
   @include repsond(s-phone) {
     height: 4rem;
   }
@@ -197,6 +213,11 @@
   width: 1.5rem;
   height: 1.5rem;
   margin: 0 0.1rem 1rem 1rem;
+  @include repsond(m-phone) {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0 0.1rem 0.5rem 0.5rem;
+  }
   @include repsond(s-phone) {
     width: 1.3rem;
     height: 1.3rem;
@@ -218,6 +239,9 @@
   padding: 0.7rem;
   resize: none;
   border: 0.8px solid rgba(0, 0, 0, 0.15);
+  @include repsond(m-phone) {
+    height: 7.8rem;
+  }
   @include repsond(s-phone) {
     height: 7.5rem;
   }
@@ -259,6 +283,10 @@
 .pastWork {
   margin: 1rem 0 0 10rem;
   display: flex;
+  @include repsond(m-phone) {
+    display: flex;
+    flex-direction: column;
+  }
   @include repsond(s-phone) {
     display: flex;
     flex-direction: column;

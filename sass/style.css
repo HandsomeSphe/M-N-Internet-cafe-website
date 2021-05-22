@@ -120,6 +120,18 @@ html {
   }
 }
 
+@media only screen and (max-width: 31.25em) {
+  #createB {
+    margin-left: 40%;
+  }
+}
+
+@media only screen and (max-width: 25em) {
+  #createB {
+    margin-left: 35%;
+  }
+}
+
 .printDocument__button {
   background-color: rgba(120, 7, 7, 0.7);
   margin-left: 1.5rem;
@@ -1999,6 +2011,12 @@ span {
           justify-content: center;
 }
 
+@media only screen and (max-width: 31.25em) {
+  .progress {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 25em) {
   .progress {
     display: none;
@@ -2015,6 +2033,12 @@ span {
   width: 60%;
   height: 3rem;
   margin: 0 0 5rem 17rem;
+}
+
+@media only screen and (max-width: 31.25em) {
+  .progressBar {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 25em) {
@@ -2088,6 +2112,19 @@ span {
   margin-left: 9rem;
 }
 
+@media only screen and (max-width: 31.25em) {
+  .Personal,
+  .High__school {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 @media only screen and (max-width: 25em) {
   .Personal,
   .High__school {
@@ -2153,6 +2190,12 @@ span {
   width: 33%;
 }
 
+@media only screen and (max-width: 31.25em) {
+  .date {
+    width: 68%;
+  }
+}
+
 @media only screen and (max-width: 25em) {
   .date {
     width: 65%;
@@ -2200,6 +2243,12 @@ span {
   height: 8rem;
   resize: none;
   border: 0.8px solid rgba(0, 0, 0, 0.15);
+}
+
+@media only screen and (max-width: 31.25em) {
+  .postaddress {
+    height: 6rem;
+  }
 }
 
 @media only screen and (max-width: 25em) {
@@ -2266,6 +2315,19 @@ span {
   margin: 0 0.1rem 1rem 1rem;
 }
 
+@media only screen and (max-width: 31.25em) {
+  .single,
+  .married,
+  .yes,
+  .no,
+  .yess,
+  .noo {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0 0.1rem 0.5rem 0.5rem;
+  }
+}
+
 @media only screen and (max-width: 25em) {
   .single,
   .married,
@@ -2295,6 +2357,14 @@ span {
   padding: 0.7rem;
   resize: none;
   border: 0.8px solid rgba(0, 0, 0, 0.15);
+}
+
+@media only screen and (max-width: 31.25em) {
+  .postaddress2,
+  .postaddress3,
+  .pastWorkExperience {
+    height: 7.8rem;
+  }
 }
 
 @media only screen and (max-width: 25em) {
@@ -2360,6 +2430,18 @@ span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media only screen and (max-width: 31.25em) {
+  .pastWork {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 @media only screen and (max-width: 25em) {

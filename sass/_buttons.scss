@@ -36,8 +36,17 @@
 }
 .createCV__button {
   animation: appear 3s ease-in;
+
   @include repsond(s-phone) {
     margin-bottom: 1rem;
+  }
+}
+#createB {
+  @include repsond(m-phone) {
+    margin-left: 40%;
+  }
+  @include repsond(s-phone) {
+    margin-left: 35%;
   }
 }
 .printDocument__button {
