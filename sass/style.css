@@ -2089,6 +2089,19 @@ span {
 }
 
 @media only screen and (max-width: 25em) {
+  .Personal,
+  .High__school {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 25em) {
   .createPersonal,
   .createSchool {
     width: 100%;
@@ -2368,6 +2381,18 @@ span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media only screen and (max-width: 25em) {
+  .pastWork {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .pastWork__left {

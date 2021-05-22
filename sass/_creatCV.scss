@@ -72,6 +72,10 @@
   align-items: flex-start;
   background-color: white;
   margin-left: 9rem;
+  @include repsond(s-phone) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .createPersonal,
 .createSchool {
@@ -263,6 +267,10 @@
 .pastWork {
   margin: 1rem 0 0 10rem;
   display: flex;
+  @include repsond(s-phone) {
+    display: flex;
+    flex-direction: column;
+  }
   &__left {
     flex: 0 0 50%;
   }
