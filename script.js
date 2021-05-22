@@ -168,6 +168,8 @@ const nextBtnTwo = document.querySelector("#next2");
 const workPage = document.querySelector(".workExperience");
 const cancelBtnThree = document.querySelector("#Three");
 
+// grab all input values
+
 const donePage = document.querySelector(".donePage");
 // this is what will happen if you click the big red button written create a cv
 CreateB.addEventListener("click", function () {
@@ -212,11 +214,12 @@ cancelBtnThree.addEventListener("click", function () {
     workPage.style.display = "none";
   }, 1000);
 });
+var cvInputs = document.querySelectorAll(input);
 doneBtn.addEventListener("click", function () {
-  donePage.style.display = "flex";
-  donePage.scrollIntoView({
-    behavior: "smooth",
-  });
+  // donePage.style.display = "flex";
+  // donePage.scrollIntoView({
+  //   behavior: "smooth",
+  // });
   setTimeout(function () {
     schoolsPage.style.display = "none";
     workPage.style.display = "none";
