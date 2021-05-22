@@ -220,10 +220,10 @@ doneBtn.addEventListener("click", function () {
   // donePage.scrollIntoView({
   //   behavior: "smooth",
   // });
-  setTimeout(function () {
-    schoolsPage.style.display = "none";
-    workPage.style.display = "none";
-    createCvPage.style.display = "none";
-    proPage.style.display = "none";
-  }, 1000);
+  // setTimeout(function () {
+  //   schoolsPage.style.display = "none";
+  //   workPage.style.display = "none";
+  //   createCvPage.style.display = "none";
+  //   proPage.style.display = "none";
+  // }, 1000);
 });
