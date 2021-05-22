@@ -42,6 +42,12 @@
   }
 }
 #createB {
+  @include repsond(tab-port) {
+    margin-left: 60%;
+  }
+  @include repsond(x-phone) {
+    margin-left: 50%;
+  }
   @include repsond(m-phone) {
     margin-left: 40%;
   }
