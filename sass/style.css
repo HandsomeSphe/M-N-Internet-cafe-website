@@ -294,7 +294,7 @@ input,
 @media only screen and (max-width: 31.25em) {
   #One {
     position: absolute;
-    top: 103%;
+    top: 75%;
     background-color: pink;
     margin: 0;
   }
@@ -303,7 +303,7 @@ input,
 @media only screen and (max-width: 25em) {
   #One {
     position: absolute;
-    top: 102.6%;
+    top: 75%;
     background-color: pink;
     margin: 0;
   }
@@ -312,7 +312,7 @@ input,
 @media only screen and (max-width: 31.25em) {
   #Two {
     position: absolute;
-    top: 86%;
+    top: 75%;
     background-color: pink;
     margin: 0;
   }
@@ -321,7 +321,7 @@ input,
 @media only screen and (max-width: 25em) {
   #Two {
     position: absolute;
-    top: 83%;
+    top: 75%;
     background-color: pink;
     margin: 0;
   }
@@ -330,7 +330,7 @@ input,
 @media only screen and (max-width: 31.25em) {
   #Three {
     position: absolute;
-    top: 95%;
+    top: 75%;
     background-color: pink;
     margin: 0;
   }
@@ -339,7 +339,7 @@ input,
 @media only screen and (max-width: 25em) {
   #Three {
     position: absolute;
-    top: 93%;
+    top: 75%;
     background-color: pink;
     margin: 0;
   }

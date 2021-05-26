@@ -150,13 +150,13 @@ input,
 #One {
   @include repsond(m-phone) {
     position: absolute;
-    top: 103%;
+    top: 75%;
     background-color: pink;
     margin: 0;
   }
   @include repsond(s-phone) {
     position: absolute;
-    top: 102.6%;
+    top: 75%;
     background-color: pink;
     margin: 0;
   }
@@ -164,13 +164,13 @@ input,
 #Two {
   @include repsond(m-phone) {
     position: absolute;
-    top: 86%;
+    top: 75%;
     background-color: pink;
     margin: 0;
   }
   @include repsond(s-phone) {
     position: absolute;
-    top: 83%;
+    top: 75%;
     background-color: pink;
     margin: 0;
   }
@@ -178,13 +178,13 @@ input,
 #Three {
   @include repsond(m-phone) {
     position: absolute;
-    top: 95%;
+    top: 75%;
     background-color: pink;
     margin: 0;
   }
   @include repsond(s-phone) {
     position: absolute;
-    top: 93%;
+    top: 75%;
     background-color: pink;
     margin: 0;
   }
