@@ -146,11 +146,47 @@ input,
   border-bottom: 2px solid #666;
   width: 3.5rem;
   cursor: pointer;
+}
+#One {
+  @include repsond(m-phone) {
+    position: absolute;
+    top: 103%;
+    background-color: pink;
+    margin: 0;
+  }
   @include repsond(s-phone) {
     position: absolute;
-    top: 83.5%;
-    left: 18%;
-    margin-bottom: 4rem;
+    top: 102.6%;
+    background-color: pink;
+    margin: 0;
+  }
+}
+#Two {
+  @include repsond(m-phone) {
+    position: absolute;
+    top: 86%;
+    background-color: pink;
+    margin: 0;
+  }
+  @include repsond(s-phone) {
+    position: absolute;
+    top: 83%;
+    background-color: pink;
+    margin: 0;
+  }
+}
+#Three {
+  @include repsond(m-phone) {
+    position: absolute;
+    top: 95%;
+    background-color: pink;
+    margin: 0;
+  }
+  @include repsond(s-phone) {
+    position: absolute;
+    top: 93%;
+    background-color: pink;
+    margin: 0;
   }
 }
 .nextBtn,
