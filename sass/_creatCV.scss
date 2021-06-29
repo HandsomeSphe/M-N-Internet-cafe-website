@@ -89,6 +89,11 @@
     width: 50%;
   }
 }
+.Personal{
+  @include repsond(s-phone){
+    background-color:pink;
+  }
+}
 .createPersonal,
 .createSchool {
   &__left {

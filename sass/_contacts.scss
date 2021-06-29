@@ -30,8 +30,10 @@
     display: flex;
     margin-top: 5rem;
     padding: 0 4rem;
+    position: relative;
     @include repsond(tab-port) {
       flex-direction: column;
+      margin-left: 10rem;
     }
     @include repsond(x-phone) {
       flex-direction: column;
@@ -178,6 +180,9 @@ input {
   // margin-top: 0.2rem;
   // box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.2), 4px 0px 15px rgba(0, 0, 0, 0.2);
   border-radius: 2px;
+  @include repsond(tab-port) {
+    width: 85%;
+  }
   @include repsond(x-phone) {
     width: 90%;
   }
@@ -200,4 +205,17 @@ input {
   background: #666;
   padding: 1rem;
   color: white;
+
+  @include repsond(tab-port) {
+    display: none;
+  }
+  @include repsond(x-phone) {
+    display: none;
+  }
+  @include repsond(m-phone) {
+    display: none;
+  }
+  @include repsond(s-phone) {
+    display: none;
+  }
 }

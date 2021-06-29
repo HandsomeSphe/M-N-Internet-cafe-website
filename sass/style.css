@@ -201,6 +201,14 @@ input,
   font-family: poppins, sans-serif;
 }
 
+@media only screen and (max-width: 43.75em) {
+  input,
+  .contact__button {
+    width: 85%;
+    height: 3.5rem;
+  }
+}
+
 @media only screen and (max-width: 37.5em) {
   input,
   .contact__button {
@@ -369,6 +377,13 @@ input,
   border: none;
   width: 65%;
   height: 2rem;
+}
+
+@media only screen and (max-width: 43.75em) {
+  #sendBtn {
+    width: 85%;
+    height: 3.5rem;
+  }
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -967,6 +982,7 @@ input,
   display: flex;
   margin-top: 5rem;
   padding: 0 4rem;
+  position: relative;
 }
 
 @media only screen and (max-width: 43.75em) {
@@ -975,6 +991,7 @@ input,
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-left: 10rem;
   }
 }
 
@@ -1210,6 +1227,12 @@ input {
   border-radius: 2px;
 }
 
+@media only screen and (max-width: 43.75em) {
+  #message {
+    width: 85%;
+  }
+}
+
 @media only screen and (max-width: 37.5em) {
   #message {
     width: 90%;
@@ -1241,6 +1264,30 @@ input {
   background: #666;
   padding: 1rem;
   color: white;
+}
+
+@media only screen and (max-width: 43.75em) {
+  .footer {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .footer {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 31.25em) {
+  .footer {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 25em) {
+  .footer {
+    display: none;
+  }
 }
 
 .homepage {
@@ -2194,6 +2241,12 @@ span {
             flex-direction: column;
     height: 70vh;
     width: 50%;
+  }
+}
+
+@media only screen and (max-width: 25em) {
+  .Personal {
+    background-color: pink;
   }
 }
 
