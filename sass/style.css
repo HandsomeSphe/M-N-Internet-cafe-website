@@ -45,6 +45,12 @@ html {
   }
 }
 
+@media only screen and (max-width: 56.65em) {
+  html {
+    font-size: 70%;
+  }
+}
+
 #cellno {
   width: 65%;
 }
@@ -582,8 +588,8 @@ input,
 
 @media only screen and (max-width: 43.75em) {
   .services {
-    height: 175vh;
-    padding-top: 3rem;
+    height: 50vh;
+    padding-top: 0;
   }
 }
 
@@ -652,10 +658,11 @@ input,
 
 @media only screen and (max-width: 43.75em) {
   .services__cards {
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 1rem 3rem 2rem 5rem;
   }
 }
 
@@ -701,9 +708,10 @@ input,
 
 @media only screen and (max-width: 43.75em) {
   .card {
-    width: 70%;
-    height: 50vh;
-    margin: 0 0 1rem 10rem;
+    width: 30%;
+    height: 57vh;
+    margin: 0 1rem 2rem 0rem;
+    padding-top: 1rem;
   }
 }
 
@@ -743,8 +751,8 @@ input,
 
 @media only screen and (max-width: 43.75em) {
   .card__title {
-    font-size: 1.7rem;
-    margin: 0 0 1.1rem 15rem;
+    font-size: 1.3rem;
+    margin: 0 0 1.1rem 3.4rem;
   }
 }
 
@@ -781,7 +789,7 @@ input,
 
 @media only screen and (max-width: 43.75em) {
   .card__description {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -807,6 +815,12 @@ input,
   margin-right: 7rem;
 }
 
+@media only screen and (max-width: 43.75em) {
+  .card:not(:last-child) {
+    margin-right: 2rem;
+  }
+}
+
 .card__icon {
   background-color: rgba(120, 7, 7, 0.2);
   width: 6.5rem;
@@ -814,6 +828,13 @@ input,
   margin: 0 auto;
   border-radius: 50px;
   margin-bottom: 1.2rem;
+}
+
+@media only screen and (max-width: 43.75em) {
+  .card__icon {
+    width: 10rem;
+    height: 10rem;
+  }
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -841,6 +862,13 @@ input,
   margin-left: 1.8rem;
 }
 
+@media only screen and (max-width: 43.75em) {
+  #globe {
+    margin-top: 2.7rem;
+    margin-left: 2.9rem;
+  }
+}
+
 @media only screen and (max-width: 37.5em) {
   #globe {
     margin: 2.2rem 0 0 2.5rem;
@@ -866,6 +894,15 @@ input,
   height: 3rem;
   fill: #666;
   margin: 1.5rem 1.4rem 0 1.7rem;
+}
+
+@media only screen and (max-width: 43.75em) {
+  .icon {
+    width: 4.1rem;
+    height: 4.1rem;
+    margin-top: 2.7rem;
+    margin-left: 2.9rem;
+  }
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -897,6 +934,12 @@ input,
   margin-left: 4.6rem;
 }
 
+@media only screen and (max-width: 43.75em) {
+  #print {
+    margin-left: 35%;
+  }
+}
+
 @media only screen and (max-width: 37.5em) {
   #print {
     margin-left: 41%;
@@ -917,6 +960,12 @@ input,
 
 #copy {
   margin-left: 3.5rem;
+}
+
+@media only screen and (max-width: 43.75em) {
+  #copy {
+    margin-left: 25%;
+  }
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -957,6 +1006,12 @@ input,
   font-weight: 500;
 }
 
+@media only screen and (max-width: 43.75em) {
+  .contacts__heading {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 37.5em) {
   .contacts__heading {
     display: none;
@@ -992,6 +1047,7 @@ input,
         -ms-flex-direction: column;
             flex-direction: column;
     margin-left: 10rem;
+    margin-top: 10rem;
   }
 }
 
@@ -1596,10 +1652,10 @@ span {
   .about {
     width: 100%;
     height: 85vh;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
@@ -1650,8 +1706,8 @@ span {
   .about__heading {
     font-size: 2.7rem;
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 23%;
-            flex: 0 0 23%;
+        -ms-flex: 0 0 45%;
+            flex: 0 0 45%;
     padding: 1rem;
     text-align: center;
     margin-bottom: 1rem;

@@ -12,6 +12,9 @@
     font-weight: 500;
     color: rgba(0, 0, 0, 0.45);
     font-weight: 500;
+    @include repsond(tab-port) {
+      display: none;
+    }
     @include repsond(x-phone) {
       display: none;
     }
@@ -34,6 +37,7 @@
     @include repsond(tab-port) {
       flex-direction: column;
       margin-left: 10rem;
+      margin-top: 10rem;
     }
     @include repsond(x-phone) {
       flex-direction: column;

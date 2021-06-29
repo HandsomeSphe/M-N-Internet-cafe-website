@@ -63,6 +63,9 @@ html {
   @include repsond(tab-port) {
     font-size: 60%;
   }
+  @include repsond(tab-land) {
+    font-size: 70%;
+  }
 }
 
 #cellno {
