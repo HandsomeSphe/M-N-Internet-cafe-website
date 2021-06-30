@@ -10,6 +10,7 @@
   overflow: hidden;
   z-index: 4000;
   background-color: white;
+
   @include repsond(tab-port) {
     width: 100%;
     height: 10vh;
@@ -41,8 +42,9 @@
     color: rgba(120, 7, 7, 0.9);
     font-family: poppins, sans-serif;
     font-weight: 700;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     cursor: pointer;
+
     @include repsond(tab-port) {
       height: 7.8vh;
       padding: 1.1rem;
@@ -76,6 +78,12 @@
     display: flex;
     justify-content: space-between;
     padding: 1rem;
+    font-size: 0.9rem;
+
+    @include repsond(tab-land) {
+      padding: 1rem;
+      font-size: 1.3rem;
+    }
     @include repsond(tab-port) {
       padding: 1.8rem 1rem;
       font-size: 1.1rem;

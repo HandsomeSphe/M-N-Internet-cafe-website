@@ -51,20 +51,21 @@ html {
   font-family: poppins, sans-serif;
   font-weight: 400;
   font-size: 1rem;
+
   @include repsond(s-phone) {
-    font-size: 22%;
+    font-size: 62.5%;
   }
   @include repsond(m-phone) {
-    font-size: 55%;
+    font-size: 62.5%;
   }
   @include repsond(x-phone) {
-    font-size: 60%;
+    font-size: 62.5%;
   }
   @include repsond(tab-port) {
-    font-size: 60%;
+    font-size: 62.5%;
   }
   @include repsond(tab-land) {
-    font-size: 70%;
+    font-size: 62.5%;
   }
 }
 
